@@ -60,8 +60,12 @@ a{color:#f3cf69}
 hr{border:0;border-top:1px solid #23486f}
 .judge-photo{max-width:140px;border-radius:8px;border:1px solid var(--line);margin:8px 0;display:block}
 .ticker-wrap{max-width:1060px;margin:8px auto 0;padding:0 16px;overflow:hidden}
+.ticker-wrap.bottom-fixed{position:fixed;left:0;right:0;bottom:8px;z-index:9999;max-width:none;padding:0 16px}
 .ticker-track{border:1px solid var(--line);border-radius:8px;background:linear-gradient(180deg,#0f2a4a,#0a1e38);padding:8px 0;white-space:nowrap;overflow:hidden}
 .ticker-track span{display:inline-block;padding-left:100%;animation:tickerScroll 28s linear infinite;color:#f7df93;font-size:14px}
+.ticker-track.speed-slow span{animation-duration:40s}
+.ticker-track.speed-normal span{animation-duration:28s}
+.ticker-track.speed-fast span{animation-duration:18s}
 @keyframes tickerScroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}
 
 @media(max-width:900px){.filters,.grid{grid-template-columns:1fr}}

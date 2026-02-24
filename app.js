@@ -10,6 +10,17 @@ let token = null;
 let newsRefreshTimer = null;
 const newsCache = new Map();
 
+function applyTickerSettings() {
+  const s = getSettings();
+  const wrap = el('legalTickerWrap');
+  const track = el('legalTickerTrack');
+  if (!wrap || !track) return;
+  wrap.style.display = s.tickerEnabled === false ? 'none' : '';
+  wrap.classList.toggle('bottom-fixed', (s.tickerPosition || 'top') === 'bottom');
+  track.classList.remove('speed-slow', 'speed-normal', 'speed-fast');
+  track.classList.add(`speed-${s.tickerSpeed || 'normal'}`);
+}
+
 function setLegalTicker(text) {
   const node = el('legalTickerText');
   if (!node) return;
@@ -38,7 +49,7 @@ function hasTier(required) {
 
 function getNotes() { return JSON.parse(localStorage.getItem(LS_NOTES) || '{}'); }
 function setNotes(x) { localStorage.setItem(LS_NOTES, JSON.stringify(x)); }
-function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true,"subscriptionTier":"core"}'); }
+function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true,"subscriptionTier":"core","tickerEnabled":true,"tickerPosition":"top","tickerSpeed":"normal"}'); }
 function setSettings(x) { localStorage.setItem(LS_SETTINGS, JSON.stringify(x)); }
 
 function rankAndFilterNews(items, query, whitelistOnly) {
@@ -363,6 +374,10 @@ function loadSettingsIntoUi() {
   if (el('newsApiKey')) el('newsApiKey').value = s.newsApiKey || '';
   if (el('newsWhitelistOnly')) el('newsWhitelistOnly').checked = s.newsWhitelistOnly !== false;
   if (el('subscriptionTier')) el('subscriptionTier').value = s.subscriptionTier || 'core';
+  if (el('tickerEnabled')) el('tickerEnabled').checked = s.tickerEnabled !== false;
+  if (el('tickerPosition')) el('tickerPosition').value = s.tickerPosition || 'top';
+  if (el('tickerSpeed')) el('tickerSpeed').value = s.tickerSpeed || 'normal';
+  applyTickerSettings();
 }
 
 function saveSettingsFromUi() {
@@ -370,10 +385,14 @@ function saveSettingsFromUi() {
     newsProvider: el('newsProvider')?.value || 'google_rss',
     newsApiKey: el('newsApiKey')?.value || '',
     newsWhitelistOnly: !!el('newsWhitelistOnly')?.checked,
-    subscriptionTier: el('subscriptionTier')?.value || 'core'
+    subscriptionTier: el('subscriptionTier')?.value || 'core',
+    tickerEnabled: !!el('tickerEnabled')?.checked,
+    tickerPosition: el('tickerPosition')?.value || 'top',
+    tickerSpeed: el('tickerSpeed')?.value || 'normal'
   };
   setSettings(s);
-  el('settingsStatus').textContent = `Saved. Provider: ${s.newsProvider}. Tier: ${s.subscriptionTier}.`;
+  applyTickerSettings();
+  el('settingsStatus').textContent = `Saved. Provider: ${s.newsProvider}. Tier: ${s.subscriptionTier}. Ticker: ${s.tickerPosition}/${s.tickerSpeed}.`;
   newsCache.clear();
   if (currentCourt) {
     renderCourt(currentCounty?.id, currentCourt);
