@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Texas Court Intel v4</title>
+  <title>Texas Court Intel LLC v4</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="topbar">
     <div>
-      <h1>Texas Court Intel</h1>
+      <h1>Texas Court Intel LLC</h1>
       <p class="sub">A Jurisprudential Intelligence Platform for Texas Litigators</p>
     </div>
     <div class="btns">
@@ -36,6 +36,14 @@
         <button id="loginBtn">Login</button>
         <button id="logoutBtn">Logout</button>
         <span id="authStatus" class="small">Not logged in</span>
+        <span id="verificationStatus" class="small">Verification: unverified</span>
+      </div>
+      <div class="grid" style="margin-top:10px;">
+        <div><label>Bar Number</label><input id="barNumber" placeholder="TX Bar #" /></div>
+        <div><label>Jurisdiction</label><input id="jurisdiction" placeholder="Texas" /></div>
+      </div>
+      <div class="btns">
+        <button id="submitVerificationBtn">Submit Attorney Verification</button>
       </div>
     </section>
 
@@ -213,6 +221,7 @@
 
     <section id="carrierReportPanel" class="panel hidden">
       <h3>Premium: Carrier Report Draft</h3>
+      <div id="premiumGateMsg" class="small">Premium features are visible only to verified attorneys.</div>
       <div class="small">Copy-ready county and judge context for insurance reporting (official + labeled supplemental context only).</div>
       <div class="btns">
         <button id="buildCarrierReportBtn">Build Report Draft</button>
@@ -224,6 +233,7 @@
     </section>
   </main>
 
+  <footer class="footer small">© Texas Court Intel LLC</footer>
   <script src="app.js"></script>
 </body>
 </html>

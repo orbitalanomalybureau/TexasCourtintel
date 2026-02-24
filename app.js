@@ -375,9 +375,17 @@ function refreshCourtOptions() {
   const q = (el('searchInput').value || '').toLowerCase().trim();
   courtSelect.innerHTML = `<option value=''>Select court...</option>`;
   if (!county) { courtSelect.disabled = true; return; }
-  county.courts.filter(c => c.name.toLowerCase().includes(q)).forEach(c => {
-    const o = document.createElement('option'); o.value = c.id; o.textContent = c.name; courtSelect.appendChild(o);
+  const filtered = county.courts.filter(c => c.name.toLowerCase().includes(q));
+  filtered.forEach(c => {
+    const o = document.createElement('option'); o.value = String(c.id); o.textContent = c.name; courtSelect.appendChild(o);
   });
+  if (!filtered.length) {
+    const o = document.createElement('option');
+    o.value = '';
+    o.textContent = 'No matching courts';
+    o.disabled = true;
+    courtSelect.appendChild(o);
+  }
   courtSelect.disabled = false;
 }
 
@@ -761,7 +769,12 @@ async function saveAdmin() {
     const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'})); a.download=`${county.name}_courts_export.csv`; a.click();
   };
 
-  el('countySelect').addEventListener('change', () => { renderCounty(data.counties.find(c=>c.id===el('countySelect').value)); refreshCourtOptions(); renderCourt(null,null); });
+  el('countySelect').addEventListener('change', () => {
+    el('searchInput').value = '';
+    renderCounty(data.counties.find(c=>c.id===el('countySelect').value));
+    refreshCourtOptions();
+    renderCourt(null,null);
+  });
   el('searchInput').addEventListener('input', refreshCourtOptions);
   el('courtSelect').addEventListener('change', () => {
     const county = data.counties.find(c=>c.id===el('countySelect').value);
