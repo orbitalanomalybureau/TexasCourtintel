@@ -53,10 +53,44 @@ async function loadStatewideTickerNews(force = false) {
   }
 }
 
+async function loadCourtTickerNews(force = false) {
+  if (!currentCounty || !currentCourt) {
+    setLegalTicker('Live Legal Intelligence: Select a county and court to load court-specific headlines.');
+    return;
+  }
+  const settings = getSettings();
+  const provider = settings.newsProvider || 'google_rss';
+  const q = `${currentCounty.name} ${currentCourt.name} ${val(currentCourt.judge)} Texas court`;
+  const key = `${provider}::court-ticker::${q.toLowerCase()}`;
+  const cached = newsCache.get(key);
+  const now = Date.now();
+  const ttlMs = 5 * 60 * 1000;
+  if (!force && cached && now - cached.ts < ttlMs) {
+    setLegalTicker(cached.text);
+    return;
+  }
+  try {
+    const out = await api(`/news/texas-courts?q=${encodeURIComponent(q)}&limit=12&provider=${encodeURIComponent(provider)}`);
+    if (!out.items?.length) {
+      setLegalTicker(`Court Wire: ${currentCounty.name} • ${currentCourt.name} — no fresh headlines right now.`);
+      return;
+    }
+    const ranked = rankAndFilterNews(out.items, q, !!settings.newsWhitelistOnly).slice(0, 5);
+    const tickerLine = ranked.map(n => `${n.title} (${n.source || 'source'})`).join('   •   ');
+    const text = `Court Wire: ${currentCounty.name} • ${currentCourt.name} • ${tickerLine}`;
+    setLegalTicker(text);
+    newsCache.set(key, { ts: now, text });
+  } catch {
+    setLegalTicker('Court Wire: feed temporarily unavailable — retrying shortly.');
+  }
+}
+
 function startTickerAutoRefresh() {
   if (tickerRefreshTimer) clearInterval(tickerRefreshTimer);
-  loadStatewideTickerNews(true);
-  tickerRefreshTimer = setInterval(() => loadStatewideTickerNews(false), 5 * 60 * 1000);
+  const run = () => (getSettings().tickerScope === 'court' ? loadCourtTickerNews(false) : loadStatewideTickerNews(false));
+  if (getSettings().tickerScope === 'court') loadCourtTickerNews(true);
+  else loadStatewideTickerNews(true);
+  tickerRefreshTimer = setInterval(run, 5 * 60 * 1000);
 }
 
 const el = (id) => document.getElementById(id);
@@ -81,7 +115,7 @@ function hasTier(required) {
 
 function getNotes() { return JSON.parse(localStorage.getItem(LS_NOTES) || '{}'); }
 function setNotes(x) { localStorage.setItem(LS_NOTES, JSON.stringify(x)); }
-function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true,"subscriptionTier":"core","tickerEnabled":true,"tickerPosition":"top","tickerSpeed":"normal"}'); }
+function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true,"subscriptionTier":"core","tickerEnabled":true,"tickerScope":"statewide","tickerPosition":"top","tickerSpeed":"normal"}'); }
 function setSettings(x) { localStorage.setItem(LS_SETTINGS, JSON.stringify(x)); }
 
 function rankAndFilterNews(items, query, whitelistOnly) {
@@ -215,6 +249,7 @@ function renderCourt(countyId, court) {
     feedbackPanel.classList.add('hidden');
     newsPanel.classList.add('hidden');
     carrierPanel.classList.add('hidden');
+    startTickerAutoRefresh();
     return;
   }
 
@@ -249,6 +284,7 @@ function renderCourt(countyId, court) {
   el('newsList').textContent = 'Loading Texas court headlines...';
   loadRealtimeNews(true);
   startNewsAutoRefresh();
+  startTickerAutoRefresh();
 }
 
 function hydrateAdmin(court) {
@@ -402,6 +438,7 @@ function loadSettingsIntoUi() {
   if (el('newsWhitelistOnly')) el('newsWhitelistOnly').checked = s.newsWhitelistOnly !== false;
   if (el('subscriptionTier')) el('subscriptionTier').value = s.subscriptionTier || 'core';
   if (el('tickerEnabled')) el('tickerEnabled').checked = s.tickerEnabled !== false;
+  if (el('tickerScope')) el('tickerScope').value = s.tickerScope || 'statewide';
   if (el('tickerPosition')) el('tickerPosition').value = s.tickerPosition || 'top';
   if (el('tickerSpeed')) el('tickerSpeed').value = s.tickerSpeed || 'normal';
   applyTickerSettings();
@@ -414,13 +451,14 @@ function saveSettingsFromUi() {
     newsWhitelistOnly: !!el('newsWhitelistOnly')?.checked,
     subscriptionTier: el('subscriptionTier')?.value || 'core',
     tickerEnabled: !!el('tickerEnabled')?.checked,
+    tickerScope: el('tickerScope')?.value || 'statewide',
     tickerPosition: el('tickerPosition')?.value || 'top',
     tickerSpeed: el('tickerSpeed')?.value || 'normal'
   };
   setSettings(s);
   applyTickerSettings();
   startTickerAutoRefresh();
-  el('settingsStatus').textContent = `Saved. Provider: ${s.newsProvider}. Tier: ${s.subscriptionTier}. Ticker: ${s.tickerPosition}/${s.tickerSpeed}.`;
+  el('settingsStatus').textContent = `Saved. Provider: ${s.newsProvider}. Tier: ${s.subscriptionTier}. Ticker: ${s.tickerScope}, ${s.tickerPosition}/${s.tickerSpeed}.`;
   newsCache.clear();
   if (currentCourt) {
     renderCourt(currentCounty?.id, currentCourt);
