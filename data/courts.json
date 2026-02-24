@@ -6,27 +6,746 @@
       "officialSite": "https://www.bexar.org/",
       "localRulesUrl": "https://www.bexar.org/2971/Courts",
       "holidayCalendarUrl": "https://www.bexar.org/",
-      "demographicsBlurb": "Large urban county centered on San Antonio; 2020 population ~2.01M with majority-Hispanic population (~59%). Education profile: bachelor's degree or higher is roughly around one-third of adults (ACS/Census profile range).",
-      "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~58% vs Republican ~40% (verify race-specific local contests each cycle).",
+      "demographicsBlurb": "Large urban county centered on San Antonio; majority-Hispanic population, major military/healthcare employment base, and mixed urban-suburban jury pools. Education profile includes strong higher-ed pipeline with notable variation by ZIP and income corridor.",
+      "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles, but margins vary significantly by precinct and judicial ballot type; benchmark presidential split is roughly D 58% / R 40%.",
       "lastReviewed": "2026-02-23",
       "courts": [
-        { "id": "1", "name": "37th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "2", "name": "45th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "3", "name": "57th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "4", "name": "73rd District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "5", "name": "131st District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "6", "name": "150th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "7", "name": "166th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "8", "name": "224th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "9", "name": "225th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "10", "name": "285th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "11", "name": "288th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "12", "name": "289th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "13", "name": "379th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "14", "name": "407th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "15", "name": "408th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "16", "name": "438th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
-        { "id": "17", "name": "439th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" }
+        {
+          "id": "1",
+          "name": "37th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "2",
+          "name": "45th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "3",
+          "name": "57th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "4",
+          "name": "73rd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "5",
+          "name": "131st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "6",
+          "name": "150th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "7",
+          "name": "166th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "8",
+          "name": "224th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "9",
+          "name": "225th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "10",
+          "name": "285th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "11",
+          "name": "288th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "12",
+          "name": "289th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "13",
+          "name": "379th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "14",
+          "name": "407th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "15",
+          "name": "408th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "16",
+          "name": "438th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "17",
+          "name": "439th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "18",
+          "name": "County Court at Law No. 1",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "19",
+          "name": "County Court at Law No. 2",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "20",
+          "name": "County Court at Law No. 3",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "21",
+          "name": "County Court at Law No. 4",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "22",
+          "name": "County Court at Law No. 5",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "23",
+          "name": "County Court at Law No. 6",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "24",
+          "name": "County Court at Law No. 7",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "25",
+          "name": "County Court at Law No. 8",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "26",
+          "name": "County Court at Law No. 9",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "27",
+          "name": "County Court at Law No. 10",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "28",
+          "name": "County Court at Law No. 11",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "29",
+          "name": "County Court at Law No. 12",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "30",
+          "name": "County Court at Law No. 13",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "31",
+          "name": "County Court at Law No. 14",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "32",
+          "name": "County Court at Law No. 15",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.bexar.org/"
+          },
+          "courtWebsite": "https://www.bexar.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        }
       ]
     },
     {
@@ -35,23 +754,78 @@
       "officialSite": "https://www.traviscountytx.gov/",
       "localRulesUrl": "https://www.traviscountytx.gov/courts",
       "holidayCalendarUrl": "https://www.traviscountytx.gov/",
-      "demographicsBlurb": "Austin-centered county with highly educated urban population and major tech-sector footprint; bachelor's degree-or-higher share is among the highest in Texas (roughly around half of adults).",
-      "politicalBlurb": "Election snapshot: strongly Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~72% vs Republican ~27% (verify race-specific local contests each cycle).",
+      "demographicsBlurb": "Austin-centered county with strong tech/public-sector economy, younger median age profile, and one of Texas\u2019s highest educational attainment rates. Jury pools can vary sharply between urban core and outlying precincts.",
+      "politicalBlurb": "Election snapshot: strongly Democratic in recent cycles; benchmark presidential split is roughly D 72% / R 27%, while select local judicial races can produce narrower deltas.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
           "id": "2",
           "name": "53rd District Court",
           "type": "Civil District Court",
-          "judge": { "value": "TBD", "source": "https://www.traviscountytx.gov/courts" },
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
           "judgeProfileBlurb": "Public profile pending verification.",
           "judgePoliticalBlurb": "Use only verified public records.",
-          "coordinator": { "value": "TBD", "source": "https://www.traviscountytx.gov/courts" },
-          "bailiff": { "value": "TBD", "source": "https://www.traviscountytx.gov/courts" },
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
           "courtWebsite": "https://www.traviscountytx.gov/courts",
           "liveStreamUrl": "",
           "publicInfo": "Populate from official county/court pages.",
           "lastReviewed": "2026-02-23"
+        },
+        {
+          "id": "3",
+          "name": "County Court at Law No. 1",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "4",
+          "name": "County Court at Law No. 2",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
         }
       ]
     },
@@ -61,23 +835,124 @@
       "officialSite": "https://www.harriscountytx.gov/",
       "localRulesUrl": "https://www.justex.net/",
       "holidayCalendarUrl": "https://www.harriscountytx.gov/",
-      "demographicsBlurb": "Texas’s largest county with very high diversity and large urban/suburban population; education profile is above state average with strong variation by precinct and municipality.",
-      "politicalBlurb": "Election snapshot: countywide results have leaned Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~56% vs Republican ~43% (verify race-specific local contests each cycle).",
+      "demographicsBlurb": "Texas\u2019s largest county with highly diverse population, heavy civil docket volume, and broad socioeconomic spread across urban, suburban, and industrial zones. Education levels are above state averages overall with sharp precinct-level differences.",
+      "politicalBlurb": "Election snapshot: countywide outcomes have leaned Democratic in recent cycles, with meaningful crossover dynamics in suburban areas; benchmark presidential split is roughly D 56% / R 43%.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
           "id": "3",
           "name": "55th District Court",
           "type": "Civil District Court",
-          "judge": { "value": "TBD", "source": "https://www.justex.net/" },
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/"
+          },
           "judgeProfileBlurb": "Public profile pending verification.",
           "judgePoliticalBlurb": "If included, derive only from verifiable public election disclosures.",
-          "coordinator": { "value": "TBD", "source": "https://www.justex.net/" },
-          "bailiff": { "value": "TBD", "source": "https://www.justex.net/" },
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/"
+          },
           "courtWebsite": "https://www.justex.net/",
           "liveStreamUrl": "",
           "publicInfo": "Populate from official pages and local rules.",
           "lastReviewed": "2026-02-23"
+        },
+        {
+          "id": "4",
+          "name": "County Civil Court at Law No. 1",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "courtWebsite": "https://www.harriscountytx.gov/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "5",
+          "name": "County Civil Court at Law No. 2",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "courtWebsite": "https://www.harriscountytx.gov/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "6",
+          "name": "County Civil Court at Law No. 3",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "courtWebsite": "https://www.harriscountytx.gov/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "7",
+          "name": "County Civil Court at Law No. 4",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.harriscountytx.gov/"
+          },
+          "courtWebsite": "https://www.harriscountytx.gov/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
         }
       ]
     },
@@ -87,23 +962,239 @@
       "officialSite": "https://www.hidalgocounty.us/",
       "localRulesUrl": "https://www.hidalgocounty.us/155/District-Courts",
       "holidayCalendarUrl": "https://www.hidalgocounty.us/",
-      "demographicsBlurb": "Border county with large Hispanic majority population and significant bilingual court-access needs; education attainment has improved over time but remains below Texas metro-county averages.",
-      "politicalBlurb": "Election snapshot: historically Democratic-leaning but increasingly competitive in statewide cycles; benchmark presidential county result was roughly Democratic ~58% vs Republican ~41% (verify race-specific local contests each cycle).",
+      "demographicsBlurb": "Border county with large Hispanic-majority population, high bilingual-service relevance, and significant cross-border economic influence. Education attainment is improving over time but still trails major Texas metro-county averages.",
+      "politicalBlurb": "Election snapshot: historically Democratic-leaning but increasingly competitive in statewide cycles; benchmark presidential split is roughly D 58% / R 41%.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
           "id": "4",
           "name": "92nd District Court",
           "type": "District Court",
-          "judge": { "value": "TBD", "source": "https://www.hidalgocounty.us/155/District-Courts" },
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/155/District-Courts"
+          },
           "judgeProfileBlurb": "Public profile pending verification.",
           "judgePoliticalBlurb": "Use attributable public records only; no speculative scoring.",
-          "coordinator": { "value": "TBD", "source": "https://www.hidalgocounty.us/155/District-Courts" },
-          "bailiff": { "value": "TBD", "source": "https://www.hidalgocounty.us/155/District-Courts" },
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/155/District-Courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/155/District-Courts"
+          },
           "courtWebsite": "https://www.hidalgocounty.us/155/District-Courts",
           "liveStreamUrl": "",
           "publicInfo": "Add publicly posted procedural details.",
           "lastReviewed": "2026-02-23"
+        },
+        {
+          "id": "5",
+          "name": "County Court at Law No. 1",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "6",
+          "name": "County Court at Law No. 2",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "7",
+          "name": "County Court at Law No. 3",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "8",
+          "name": "County Court at Law No. 4",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "9",
+          "name": "County Court at Law No. 5",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "10",
+          "name": "County Court at Law No. 6",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "11",
+          "name": "County Court at Law No. 7",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "12",
+          "name": "County Court at Law No. 8",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "13",
+          "name": "County Court at Law No. 9",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
         }
       ]
     },
@@ -113,23 +1204,147 @@
       "officialSite": "https://www.dallascounty.org/",
       "localRulesUrl": "https://www.dallascounty.org/government/civil-district-courts/",
       "holidayCalendarUrl": "https://www.dallascounty.org/",
-      "demographicsBlurb": "Large metro county with diverse urban and suburban population composition; education attainment is relatively high with substantial graduate/professional concentration in core urban areas.",
-      "politicalBlurb": "Election snapshot: countywide results have leaned Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~65% vs Republican ~34% (verify race-specific local contests each cycle).",
+      "demographicsBlurb": "Large metro county with high civil/commercial docket activity, substantial corporate-employer base, and diverse juror pools. Education attainment is relatively high overall, with concentration of graduate/professional populations in core submarkets.",
+      "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles; benchmark presidential split is roughly D 65% / R 34%, with notable variation between urban core and outer precincts.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
           "id": "5",
           "name": "44th District Court",
           "type": "Civil District Court",
-          "judge": { "value": "TBD", "source": "https://www.dallascounty.org/government/civil-district-courts/" },
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/civil-district-courts/"
+          },
           "judgeProfileBlurb": "Public profile pending verification.",
           "judgePoliticalBlurb": "Provide factual, sourced public-election context only.",
-          "coordinator": { "value": "TBD", "source": "https://www.dallascounty.org/government/civil-district-courts/" },
-          "bailiff": { "value": "TBD", "source": "https://www.dallascounty.org/government/civil-district-courts/" },
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/civil-district-courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/civil-district-courts/"
+          },
           "courtWebsite": "https://www.dallascounty.org/government/civil-district-courts/",
           "liveStreamUrl": "",
           "publicInfo": "Add standing orders/hearing preferences from official sources.",
           "lastReviewed": "2026-02-23"
+        },
+        {
+          "id": "6",
+          "name": "County Court at Law No. 1",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "7",
+          "name": "County Court at Law No. 2",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "8",
+          "name": "County Court at Law No. 3",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "9",
+          "name": "County Court at Law No. 4",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
+        },
+        {
+          "id": "10",
+          "name": "County Court at Law No. 5",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/",
+          "liveStreamUrl": "",
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
+          "lastReviewed": "2026-02-24"
         }
       ]
     }
