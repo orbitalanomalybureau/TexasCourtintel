@@ -144,6 +144,7 @@ function renderCourt(countyId, court) {
   const newsUrl = jn && jn !== 'TBD' ? judgeNewsLink(jn, county?.name || '') : null;
 
   card.innerHTML = `<h3>${court.name} <span class='badge'>Court Profile</span></h3>
+    ${court.judgePhotoUrl ? `<img class='judge-photo' src='${court.judgePhotoUrl}' alt='Official photo for ${jn}' />` : ''}
     <div class='linkrow'>
       ${court.courtWebsite ? `<a target='_blank' href='${court.courtWebsite}'>Court Website</a>` : ''}
       ${court.liveStreamUrl ? `<a target='_blank' href='${court.liveStreamUrl}'>Live Stream</a>` : '<span class="small">No livestream link yet</span>'}
@@ -172,6 +173,7 @@ function hydrateAdmin(court) {
   el('adminJudgeSource').value = src(court.judge) || '';
   el('adminJudgeProfile').value = court.judgeProfileBlurb || '';
   el('adminJudgePolitical').value = court.judgePoliticalBlurb || '';
+  el('adminJudgePhoto').value = court.judgePhotoUrl || '';
   el('adminCoord').value = val(court.coordinator) || '';
   el('adminCoordSource').value = src(court.coordinator) || '';
   el('adminBailiff').value = val(court.bailiff) || '';
@@ -407,6 +409,7 @@ async function saveAdmin() {
     currentCourt.judge = { value: saved.judge || 'TBD', source: saved.judge_source || '' };
     currentCourt.judgeProfileBlurb = saved.judge_profile_blurb || '';
     currentCourt.judgePoliticalBlurb = saved.judge_political_blurb || '';
+    currentCourt.judgePhotoUrl = el('adminJudgePhoto').value || '';
     currentCourt.coordinator = { value: saved.coordinator || 'TBD', source: saved.coordinator_source || '' };
     currentCourt.bailiff = { value: saved.bailiff || 'TBD', source: saved.bailiff_source || '' };
     currentCourt.publicInfo = saved.public_info || '';
@@ -434,7 +437,7 @@ async function saveAdmin() {
   el('saveSettingsBtn').onclick = saveSettingsFromUi;
   el('testNewsProviderBtn').onclick = testProviderHealth;
   el('saveAdminBtn').onclick = saveAdmin;
-  el('clearAdminBtn').onclick = () => hydrateAdmin({ judge:'', coordinator:'', bailiff:'', publicInfo:'', lastReviewed:'' });
+  el('clearAdminBtn').onclick = () => hydrateAdmin({ judge:'', judgePhotoUrl:'', coordinator:'', bailiff:'', publicInfo:'', lastReviewed:'' });
 
   el('copyCourtBtn').onclick = copyCourtSummary;
   el('loadNewsBtn').onclick = loadRealtimeNews;
