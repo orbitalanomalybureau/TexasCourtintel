@@ -14,6 +14,16 @@ const el = (id) => document.getElementById(id);
 const val = (f) => (typeof f === 'object' && f?.value ? f.value : (f || 'TBD'));
 const src = (f) => (typeof f === 'object' ? (f.source || '') : '');
 
+function freshnessLabel(dateStr) {
+  if (!dateStr) return 'freshness: unknown';
+  const d = new Date(dateStr + 'T00:00:00');
+  if (isNaN(d.getTime())) return 'freshness: unknown';
+  const days = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
+  if (days <= 0) return 'reviewed today';
+  if (days === 1) return 'reviewed 1 day ago';
+  return `reviewed ${days} days ago`;
+}
+
 function getNotes() { return JSON.parse(localStorage.getItem(LS_NOTES) || '{}'); }
 function setNotes(x) { localStorage.setItem(LS_NOTES, JSON.stringify(x)); }
 function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true}'); }
@@ -93,7 +103,7 @@ function renderCounty(county) {
     </div>
     <p><strong>Demographics:</strong> ${county.demographicsBlurb || 'TBD'}</p>
     <p><strong>Political context:</strong> ${county.politicalBlurb || 'TBD'}</p>
-    <p class='small'>Last reviewed: ${county.lastReviewed || 'TBD'}</p>`;
+    <p class='small'>Last reviewed: ${county.lastReviewed || 'TBD'} • ${freshnessLabel(county.lastReviewed || '')}</p>`;
   card.classList.remove('hidden');
 }
 
@@ -145,7 +155,7 @@ function renderCourt(countyId, court) {
     <p><strong>Coordinator:</strong> ${val(court.coordinator)}</p>
     <p><strong>Bailiff:</strong> ${val(court.bailiff)}</p>
     <p><strong>Public notes:</strong> ${court.publicInfo || 'TBD'}</p>
-    <p class='small'>Last reviewed: ${court.lastReviewed || 'TBD'}</p>`;
+    <p class='small'>Last reviewed: ${court.lastReviewed || 'TBD'} • ${freshnessLabel(court.lastReviewed || '')}</p>`;
   card.classList.remove('hidden');
   notesPanel.classList.remove('hidden');
   feedbackPanel.classList.remove('hidden');
