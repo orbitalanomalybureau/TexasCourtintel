@@ -10,6 +10,12 @@ let token = null;
 let newsRefreshTimer = null;
 const newsCache = new Map();
 
+function setLegalTicker(text) {
+  const node = el('legalTickerText');
+  if (!node) return;
+  node.textContent = text || 'Live Legal Intelligence: monitoring updates.';
+}
+
 const el = (id) => document.getElementById(id);
 const val = (f) => (typeof f === 'object' && f?.value ? f.value : (f || 'TBD'));
 const src = (f) => (typeof f === 'object' ? (f.source || '') : '');
@@ -161,6 +167,7 @@ function renderCourt(countyId, court) {
   currentCourt = court;
   if (!court) {
     if (newsRefreshTimer) { clearInterval(newsRefreshTimer); newsRefreshTimer = null; }
+    setLegalTicker('Live Legal Intelligence: Select a county and court to load real-time legal headlines.');
     card.classList.add('hidden');
     notesPanel.classList.add('hidden');
     feedbackPanel.classList.add('hidden');
@@ -171,6 +178,7 @@ function renderCourt(countyId, court) {
 
   const jn = val(court.judge);
   const newsUrl = jn && jn !== 'TBD' ? judgeNewsLink(jn, county?.name || '') : null;
+  setLegalTicker(`Live Legal Intelligence: ${county?.name || ''} County • ${court.name} • Judge ${jn}. Loading latest headlines...`);
 
   card.innerHTML = `<h3>${court.name} <span class='badge'>Court Profile</span></h3>
     ${court.judgePhotoUrl ? `<img class='judge-photo' src='${court.judgePhotoUrl}' alt='Official photo for ${jn}' />` : ''}
@@ -313,15 +321,18 @@ async function loadRealtimeNews(force = false) {
   box.textContent = 'Loading headlines...';
   try {
     const out = await api(`/news/texas-courts?q=${encodeURIComponent(q)}&limit=12&provider=${encodeURIComponent(provider)}`);
-    if (!out.items?.length) { box.textContent = 'No recent headlines found for this query.'; return; }
+    if (!out.items?.length) { box.textContent = 'No recent headlines found for this query.'; setLegalTicker(`Live Legal Intelligence: ${currentCounty.name} County • ${currentCourt.name} • no fresh headlines in this cycle.`); return; }
     const ranked = rankAndFilterNews(out.items, q, !!settings.newsWhitelistOnly).slice(0, 8);
     const html = ranked.map((n,i)=>`${i+1}. <a target='_blank' href='${n.link}'>${n.title}</a> <span class='small'>(${n.source || 'source'} | score ${n._score ?? 0})</span>`).join('<br/>');
     box.innerHTML = html;
+    const tickerLine = ranked.slice(0, 5).map(n => `${n.title} (${n.source || 'source'})`).join('   •   ');
+    setLegalTicker(`Live Legal Intelligence: ${tickerLine}`);
     el('newsStatus').textContent = `Provider: ${provider} | refreshed ${new Date().toLocaleTimeString()}`;
     newsCache.set(key, { ts: now, html });
   } catch (e) {
     el('newsStatus').textContent = `Provider error: ${e.message}`;
     box.textContent = `News fetch unavailable: ${e.message}`;
+    setLegalTicker('Live Legal Intelligence: feed temporarily unavailable — retrying on next refresh cycle.');
   }
 }
 
