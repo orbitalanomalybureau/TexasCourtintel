@@ -1,0 +1,134 @@
+{
+  "counties": [
+    {
+      "id": "bexar",
+      "name": "Bexar",
+      "officialSite": "https://www.bexar.org/",
+      "localRulesUrl": "https://www.bexar.org/2971/Courts",
+      "holidayCalendarUrl": "https://www.bexar.org/",
+      "demographicsBlurb": "Large urban county centered on San Antonio with diverse population and mixed urban/suburban jury pools.",
+      "politicalBlurb": "Historically competitive-to-leaning Democratic in recent countywide results; verify latest election cycle data.",
+      "lastReviewed": "2026-02-23",
+      "courts": [
+        {
+          "id": "1",
+          "name": "73rd District Court",
+          "type": "Civil District Court",
+          "judge": { "value": "TBD", "source": "https://www.bexar.org/2971/Courts" },
+          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": { "value": "TBD", "source": "https://www.bexar.org/2971/Courts" },
+          "bailiff": { "value": "TBD", "source": "https://www.bexar.org/2971/Courts" },
+          "courtWebsite": "https://www.bexar.org/2971/Courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Add hearing preferences and standing orders.",
+          "lastReviewed": "2026-02-23"
+        }
+      ]
+    },
+    {
+      "id": "travis",
+      "name": "Travis",
+      "officialSite": "https://www.traviscountytx.gov/",
+      "localRulesUrl": "https://www.traviscountytx.gov/courts",
+      "holidayCalendarUrl": "https://www.traviscountytx.gov/",
+      "demographicsBlurb": "Austin-centered county with highly educated urban population and significant tech-sector footprint.",
+      "politicalBlurb": "Generally Democratic-leaning in recent countywide elections; verify latest cycle for updates.",
+      "lastReviewed": "2026-02-23",
+      "courts": [
+        {
+          "id": "2",
+          "name": "53rd District Court",
+          "type": "Civil District Court",
+          "judge": { "value": "TBD", "source": "https://www.traviscountytx.gov/courts" },
+          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgePoliticalBlurb": "Use only verified public records.",
+          "coordinator": { "value": "TBD", "source": "https://www.traviscountytx.gov/courts" },
+          "bailiff": { "value": "TBD", "source": "https://www.traviscountytx.gov/courts" },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Populate from official county/court pages.",
+          "lastReviewed": "2026-02-23"
+        }
+      ]
+    },
+    {
+      "id": "harris",
+      "name": "Harris",
+      "officialSite": "https://www.harriscountytx.gov/",
+      "localRulesUrl": "https://www.justex.net/",
+      "holidayCalendarUrl": "https://www.harriscountytx.gov/",
+      "demographicsBlurb": "Texas’s largest county with broad demographic diversity and major metropolitan civil docket volume.",
+      "politicalBlurb": "Mixed but recently trending Democratic in countywide contests; check latest election outcomes.",
+      "lastReviewed": "2026-02-23",
+      "courts": [
+        {
+          "id": "3",
+          "name": "55th District Court",
+          "type": "Civil District Court",
+          "judge": { "value": "TBD", "source": "https://www.justex.net/" },
+          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgePoliticalBlurb": "If included, derive only from verifiable public election disclosures.",
+          "coordinator": { "value": "TBD", "source": "https://www.justex.net/" },
+          "bailiff": { "value": "TBD", "source": "https://www.justex.net/" },
+          "courtWebsite": "https://www.justex.net/",
+          "liveStreamUrl": "",
+          "publicInfo": "Populate from official pages and local rules.",
+          "lastReviewed": "2026-02-23"
+        }
+      ]
+    },
+    {
+      "id": "hidalgo",
+      "name": "Hidalgo",
+      "officialSite": "https://www.hidalgocounty.us/",
+      "localRulesUrl": "https://www.hidalgocounty.us/155/District-Courts",
+      "holidayCalendarUrl": "https://www.hidalgocounty.us/",
+      "demographicsBlurb": "Border county with large Hispanic population and high-volume civil/criminal court activity.",
+      "politicalBlurb": "Historically Democratic-leaning with evolving competitive dynamics in recent cycles.",
+      "lastReviewed": "2026-02-23",
+      "courts": [
+        {
+          "id": "4",
+          "name": "92nd District Court",
+          "type": "District Court",
+          "judge": { "value": "TBD", "source": "https://www.hidalgocounty.us/155/District-Courts" },
+          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgePoliticalBlurb": "Use attributable public records only; no speculative scoring.",
+          "coordinator": { "value": "TBD", "source": "https://www.hidalgocounty.us/155/District-Courts" },
+          "bailiff": { "value": "TBD", "source": "https://www.hidalgocounty.us/155/District-Courts" },
+          "courtWebsite": "https://www.hidalgocounty.us/155/District-Courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Add publicly posted procedural details.",
+          "lastReviewed": "2026-02-23"
+        }
+      ]
+    },
+    {
+      "id": "dallas",
+      "name": "Dallas",
+      "officialSite": "https://www.dallascounty.org/",
+      "localRulesUrl": "https://www.dallascounty.org/government/civil-district-courts/",
+      "holidayCalendarUrl": "https://www.dallascounty.org/",
+      "demographicsBlurb": "Large metro county with substantial civil docket activity and diverse juror pools.",
+      "politicalBlurb": "Generally Democratic-leaning in countywide races in recent cycles; monitor updates.",
+      "lastReviewed": "2026-02-23",
+      "courts": [
+        {
+          "id": "5",
+          "name": "44th District Court",
+          "type": "Civil District Court",
+          "judge": { "value": "TBD", "source": "https://www.dallascounty.org/government/civil-district-courts/" },
+          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgePoliticalBlurb": "Provide factual, sourced public-election context only.",
+          "coordinator": { "value": "TBD", "source": "https://www.dallascounty.org/government/civil-district-courts/" },
+          "bailiff": { "value": "TBD", "source": "https://www.dallascounty.org/government/civil-district-courts/" },
+          "courtWebsite": "https://www.dallascounty.org/government/civil-district-courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Add standing orders/hearing preferences from official sources.",
+          "lastReviewed": "2026-02-23"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Spectral:wght@400;600&display=swap');
+
+:root{
+  --bg:#0f0b08;
+  --bg2:#1a120d;
+  --panel:#221712;
+  --ink:#f5e9d8;
+  --muted:#c9b89b;
+  --gold:#c7a55a;
+  --line:#5b4530;
+  --accent:#7a2e2e;
+}
+
+body{
+  font-family:'Spectral', serif;
+  background:radial-gradient(circle at top,#2a1b13 0%,var(--bg) 55%,#090705 100%);
+  color:var(--ink);
+  margin:0;
+}
+.container{max-width:1060px;margin:24px auto;padding:0 16px 42px}
+.topbar{display:flex;justify-content:space-between;align-items:center;max-width:1060px;margin:20px auto 0;padding:0 16px;border-bottom:1px solid var(--line)}
+h1{font-family:'Cinzel',serif;letter-spacing:.5px;margin-bottom:6px;color:var(--gold)}
+.sub{color:var(--muted);margin-top:0}
+.filters{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{display:flex;flex-direction:column;gap:6px;font-weight:600;color:var(--muted)}
+select,input,textarea,button{
+  padding:10px;
+  border-radius:6px;
+  border:1px solid var(--line);
+  background:linear-gradient(180deg,var(--bg2),#130d09);
+  color:var(--ink)
+}
+button{
+  cursor:pointer;
+  font-weight:700;
+  font-family:'Cinzel',serif;
+  background:linear-gradient(180deg,#6f1f1f,#4f1515);
+  border-color:#7a3d2f
+}
+button:hover{filter:brightness(1.08)}
+.panel{
+  background:linear-gradient(180deg,var(--panel),#17100c);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:14px;
+  margin-top:12px;
+  box-shadow:0 0 0 1px #2a2018 inset, 0 10px 30px rgba(0,0,0,.25)
+}
+.hidden{display:none}
+.small{color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.btns{display:flex;gap:8px;align-items:end;flex-wrap:wrap}
+a{color:#e2c277}
+.search-results{margin-top:6px;border:1px solid var(--line);border-radius:8px;max-height:220px;overflow:auto;background:#120d09}
+.search-item{padding:8px 10px;border-bottom:1px solid #3d2d20;cursor:pointer}
+.search-item:hover{background:#2b1d13}
+.badge{display:inline-block;padding:2px 6px;border:1px solid #7b633a;border-radius:999px;font-size:11px;color:#e9d4a3;margin-left:6px}
+.linkrow{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0}
+hr{border:0;border-top:1px solid #3d2d20}
+
+@media(max-width:900px){.filters,.grid{grid-template-columns:1fr}}

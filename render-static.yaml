@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: texas-court-intel-app
+    env: static
+    rootDir: .
+    buildCommand: "echo static"
+    staticPublishPath: .

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Texas Court Intel v4</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>Texas Court Intel</h1>
+      <p class="sub">A Jurisprudential Intelligence Platform for Texas Litigators</p>
+    </div>
+    <div class="btns">
+      <button id="toggleAdminBtn">Admin</button>
+      <button id="toggleModerationBtn">Moderation</button>
+      <button id="toggleSettingsBtn">Settings</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel" id="authPanel">
+      <h3>Admin Login</h3>
+      <div class="grid">
+        <div><label>Username</label><input id="loginUser" placeholder="scott_admin" /></div>
+        <div><label>Password</label><input id="loginPass" type="password" placeholder="••••••••" /></div>
+      </div>
+      <div class="btns">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn">Logout</button>
+        <span id="authStatus" class="small">Not logged in</span>
+      </div>
+    </section>
+
+    <section class="panel filters">
+      <div>
+        <label>Global Search (judge/county/court)</label>
+        <input id="globalSearchInput" placeholder="e.g., Bexar, 55th District Court, Judge Smith" />
+        <div id="globalSearchResults" class="search-results hidden"></div>
+      </div>
+      <div>
+        <label>County</label>
+        <select id="countySelect"><option value="">Select county...</option></select>
+      </div>
+      <div>
+        <label>Court</label>
+        <select id="courtSelect" disabled><option value="">Select court...</option></select>
+      </div>
+      <div>
+        <label>Search Courts (selected county)</label>
+        <input id="searchInput" placeholder="Type court name" />
+      </div>
+      <div class="btns">
+        <button id="exportCsvBtn">Export CSV</button>
+        <button id="copyCourtBtn">Copy Court Summary</button>
+      </div>
+    </section>
+
+    <section id="countyCard" class="panel hidden"></section>
+    <section id="courtCard" class="panel hidden"></section>
+
+    <section id="adminPanel" class="panel hidden">
+      <h3>Admin Court Editor (API-backed)</h3>
+      <p class="small">Login is required for persistent saves. Use public-source, attributable data only.</p>
+      <div class="grid">
+        <div><label>Judge</label><input id="adminJudge" /></div>
+        <div><label>Judge Source</label><input id="adminJudgeSource" /></div>
+        <div><label>Judge Profile Blurb</label><input id="adminJudgeProfile" /></div>
+        <div><label>Judge Political Context Blurb</label><input id="adminJudgePolitical" /></div>
+        <div><label>Coordinator</label><input id="adminCoord" /></div>
+        <div><label>Coordinator Source</label><input id="adminCoordSource" /></div>
+        <div><label>Bailiff</label><input id="adminBailiff" /></div>
+        <div><label>Bailiff Source</label><input id="adminBailiffSource" /></div>
+        <div><label>Court Website URL</label><input id="adminCourtUrl" /></div>
+        <div><label>Live Stream URL (YouTube/county)</label><input id="adminLiveStreamUrl" /></div>
+        <div><label>Last Verified (YYYY-MM-DD)</label><input id="adminVerified" /></div>
+      </div>
+      <label>Public Notes</label>
+      <textarea id="adminPublicInfo" rows="4"></textarea>
+      <div class="btns">
+        <button id="saveAdminBtn">Save</button>
+        <button id="clearAdminBtn">Clear Fields</button>
+      </div>
+    </section>
+
+    <section id="notesPanel" class="panel hidden">
+      <h3>Private Firm Notes</h3>
+      <div class="grid">
+        <div><label>User</label><input id="noteUser" placeholder="Scott" /></div>
+        <div class="btnalign"><button id="loadNotesBtn">Load Notes</button></div>
+      </div>
+      <label>Notes</label>
+      <textarea id="noteBody" rows="5"></textarea>
+      <div class="btns"><button id="saveNotesBtn">Save Notes</button></div>
+    </section>
+
+    <section id="feedbackPanel" class="panel hidden">
+      <h3>User Feedback (Court/Judge)</h3>
+      <div class="grid">
+        <div><label>Your Name</label><input id="feedbackUser" placeholder="Optional" /></div>
+        <div><label>Rating (1-5)</label><input id="feedbackRating" type="number" min="1" max="5" /></div>
+      </div>
+      <label>Feedback</label>
+      <textarea id="feedbackBody" rows="4" placeholder="Share helpful, factual feedback about this court/judge."></textarea>
+      <div class="btns">
+        <button id="saveFeedbackBtn">Submit Feedback</button>
+        <button id="loadFeedbackBtn">Load Approved Feedback</button>
+        <button id="copyFeedbackBtn">Copy Feedback</button>
+      </div>
+      <div id="feedbackList" class="small"></div>
+    </section>
+
+    <section id="moderationPanel" class="panel hidden">
+      <h3>Feedback Moderation Queue (Admin)</h3>
+      <div class="btns">
+        <button id="loadModerationBtn">Load Pending Feedback</button>
+      </div>
+      <div class="grid">
+        <div><label>Status Filter</label>
+          <select id="moderationFilter">
+            <option value="pending">Pending</option>
+            <option value="all">All</option>
+          </select>
+        </div>
+      </div>
+      <div id="moderationList" class="small"></div>
+    </section>
+
+    <section id="settingsPanel" class="panel hidden">
+      <h3>News Provider Settings (Admin)</h3>
+      <div class="grid">
+        <div>
+          <label>Provider</label>
+          <select id="newsProvider">
+            <option value="google_rss">Google News RSS (Free)</option>
+            <option value="newsapi">NewsAPI (Paid/API key)</option>
+          </select>
+        </div>
+        <div>
+          <label>NewsAPI Key (optional, local)</label>
+          <input id="newsApiKey" type="password" placeholder="Paste key for frontend note only" />
+        </div>
+        <div>
+          <label><input id="newsWhitelistOnly" type="checkbox" /> Prefer trusted legal/news sources only</label>
+        </div>
+      </div>
+      <div class="btns">
+        <button id="saveSettingsBtn">Save Settings</button>
+        <button id="testNewsProviderBtn">Test Provider Health</button>
+      </div>
+      <div id="settingsStatus" class="small"></div>
+      <div id="providerHealth" class="small"></div>
+    </section>
+
+    <section id="newsPanel" class="panel hidden">
+      <h3>Real-Time Court/Judge News</h3>
+      <div id="newsStatus" class="small">Provider status: unknown</div>
+      <div class="btns">
+        <button id="loadNewsBtn">Load Texas Court News</button>
+      </div>
+      <div id="newsList" class="small"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
