@@ -129,6 +129,7 @@ function renderCourt(countyId, court) {
   const notesPanel = el('notesPanel');
   const feedbackPanel = el('feedbackPanel');
   const newsPanel = el('newsPanel');
+  const carrierPanel = el('carrierReportPanel');
   const county = data.counties.find(c => c.id === countyId);
   currentCourt = court;
   if (!court) {
@@ -137,6 +138,7 @@ function renderCourt(countyId, court) {
     notesPanel.classList.add('hidden');
     feedbackPanel.classList.add('hidden');
     newsPanel.classList.add('hidden');
+    carrierPanel.classList.add('hidden');
     return;
   }
 
@@ -161,6 +163,7 @@ function renderCourt(countyId, court) {
   notesPanel.classList.remove('hidden');
   feedbackPanel.classList.remove('hidden');
   newsPanel.classList.remove('hidden');
+  carrierPanel.classList.remove('hidden');
   hydrateAdmin(court);
   renderFeedbackList();
   el('newsList').textContent = 'Loading Texas court headlines...';
@@ -338,6 +341,41 @@ async function copyCourtSummary() {
   alert('Copied court summary to clipboard.');
 }
 
+function buildCarrierReportDraft() {
+  if (!currentCounty || !currentCourt) return alert('Select county/court first.');
+  const report = [
+    `County: ${currentCounty.name}`,
+    `Court: ${currentCourt.name}`,
+    `Judge: ${val(currentCourt.judge)}`,
+    '',
+    'County Demographics Context:',
+    currentCounty.demographicsBlurb || 'TBD',
+    '',
+    'County Political Context (public election benchmark):',
+    currentCounty.politicalBlurb || 'TBD',
+    '',
+    'Judge Background Context:',
+    currentCourt.judgeProfileBlurb || 'TBD',
+    '',
+    'Judge Political Context (public-source only):',
+    currentCourt.judgePoliticalBlurb || 'TBD',
+    '',
+    `Court Website: ${currentCourt.courtWebsite || ''}`,
+    `Judge Source: ${src(currentCourt.judge) || 'TBD'}`,
+    `Last Reviewed: ${currentCourt.lastReviewed || currentCounty.lastReviewed || 'TBD'}`,
+    '',
+    'Compliance Note: Official sources are primary. Supplemental context (e.g., LinkedIn) is premium-only and never used as sole basis for factual field updates.'
+  ].join('\n');
+  el('carrierReportBody').value = report;
+}
+
+async function copyCarrierReportDraft() {
+  const txt = (el('carrierReportBody').value || '').trim();
+  if (!txt) return alert('Build report draft first.');
+  await navigator.clipboard.writeText(txt);
+  alert('Carrier report draft copied.');
+}
+
 async function loadModerationQueue() {
   const box = el('moderationList');
   if (!token) return alert('Login as admin first.');
@@ -441,6 +479,8 @@ async function saveAdmin() {
 
   el('copyCourtBtn').onclick = copyCourtSummary;
   el('loadNewsBtn').onclick = loadRealtimeNews;
+  el('buildCarrierReportBtn').onclick = buildCarrierReportDraft;
+  el('copyCarrierReportBtn').onclick = copyCarrierReportDraft;
   el('saveFeedbackBtn').onclick = saveFeedbackEntry;
   el('loadFeedbackBtn').onclick = renderFeedbackList;
   el('copyFeedbackBtn').onclick = copyFeedback;
