@@ -3,10 +3,21 @@ from sqlmodel import Session, select
 
 from app.db import get_session
 from app.models.user import User
-from app.schemas.auth import LoginRequest, TokenResponse
-from app.security import verify_password, create_access_token, decode_token
+from app.schemas.auth import LoginRequest, TokenResponse, RegisterRequest
+from app.security import verify_password, create_access_token, decode_token, hash_password
 
 router = APIRouter(prefix="/api", tags=["auth"])
+
+@router.post('/auth/register', response_model=TokenResponse)
+def register(payload: RegisterRequest, session: Session = Depends(get_session)):
+    existing = session.exec(select(User).where(User.username == payload.username)).first()
+    if existing:
+        raise HTTPException(status_code=409, detail='Username already exists')
+    user = User(username=payload.username.strip(), password_hash=hash_password(payload.password), role='viewer', is_active=True)
+    session.add(user)
+    session.commit()
+    token = create_access_token(user.username, user.role)
+    return TokenResponse(access_token=token, role=user.role)
 
 @router.post('/auth/login', response_model=TokenResponse)
 def login(payload: LoginRequest, session: Session = Depends(get_session)):

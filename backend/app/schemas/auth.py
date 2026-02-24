@@ -8,3 +8,7 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
     role: str
+
+class RegisterRequest(BaseModel):
+    username: str
+    password: str
