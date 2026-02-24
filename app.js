@@ -24,9 +24,15 @@ function freshnessLabel(dateStr) {
   return `reviewed ${days} days ago`;
 }
 
+function hasTier(required) {
+  const order = { core: 1, pro: 2, premium: 3 };
+  const current = getSettings().subscriptionTier || 'core';
+  return (order[current] || 1) >= (order[required] || 1);
+}
+
 function getNotes() { return JSON.parse(localStorage.getItem(LS_NOTES) || '{}'); }
 function setNotes(x) { localStorage.setItem(LS_NOTES, JSON.stringify(x)); }
-function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true}'); }
+function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true,"subscriptionTier":"core"}'); }
 function setSettings(x) { localStorage.setItem(LS_SETTINGS, JSON.stringify(x)); }
 
 function rankAndFilterNews(items, query, whitelistOnly) {
@@ -67,6 +73,27 @@ async function loadData() {
 }
 
 function setAuthStatus(msg) { el('authStatus').textContent = msg; }
+
+async function loadPlans() {
+  try {
+    const out = await api('/billing/plans');
+    const plans = out?.plans || [];
+    el('plansList').innerHTML = plans.map(p => `<div><strong>${p.name}</strong> - $${p.price_monthly}/mo<br/>${(p.features||[]).join(' • ')}</div><hr/>`).join('');
+  } catch {
+    el('plansList').textContent = 'Plans unavailable right now.';
+  }
+}
+
+async function openCheckout(plan) {
+  try {
+    const links = await api('/billing/checkout-links');
+    const url = plan === 'pro' ? links.pro : links.premium;
+    if (!url) return alert(`Checkout link for ${plan} not set yet.`);
+    window.open(url, '_blank');
+  } catch (e) {
+    alert(`Unable to open checkout: ${e.message}`);
+  }
+}
 
 async function login() {
   const username = el('loginUser').value.trim();
@@ -163,7 +190,11 @@ function renderCourt(countyId, court) {
   notesPanel.classList.remove('hidden');
   feedbackPanel.classList.remove('hidden');
   newsPanel.classList.remove('hidden');
-  carrierPanel.classList.remove('hidden');
+  if (hasTier('premium')) {
+    carrierPanel.classList.remove('hidden');
+  } else {
+    carrierPanel.classList.add('hidden');
+  }
   hydrateAdmin(court);
   renderFeedbackList();
   el('newsList').textContent = 'Loading Texas court headlines...';
@@ -320,18 +351,23 @@ function loadSettingsIntoUi() {
   if (el('newsProvider')) el('newsProvider').value = s.newsProvider || 'google_rss';
   if (el('newsApiKey')) el('newsApiKey').value = s.newsApiKey || '';
   if (el('newsWhitelistOnly')) el('newsWhitelistOnly').checked = s.newsWhitelistOnly !== false;
+  if (el('subscriptionTier')) el('subscriptionTier').value = s.subscriptionTier || 'core';
 }
 
 function saveSettingsFromUi() {
   const s = {
     newsProvider: el('newsProvider')?.value || 'google_rss',
     newsApiKey: el('newsApiKey')?.value || '',
-    newsWhitelistOnly: !!el('newsWhitelistOnly')?.checked
+    newsWhitelistOnly: !!el('newsWhitelistOnly')?.checked,
+    subscriptionTier: el('subscriptionTier')?.value || 'core'
   };
   setSettings(s);
-  el('settingsStatus').textContent = `Saved. Provider: ${s.newsProvider}.`;
+  el('settingsStatus').textContent = `Saved. Provider: ${s.newsProvider}. Tier: ${s.subscriptionTier}.`;
   newsCache.clear();
-  if (currentCourt) loadRealtimeNews(true);
+  if (currentCourt) {
+    renderCourt(currentCounty?.id, currentCourt);
+    loadRealtimeNews(true);
+  }
 }
 
 async function copyCourtSummary() {
@@ -374,6 +410,42 @@ async function copyCarrierReportDraft() {
   if (!txt) return alert('Build report draft first.');
   await navigator.clipboard.writeText(txt);
   alert('Carrier report draft copied.');
+}
+
+async function copyCountySection() {
+  if (!currentCounty) return alert('Select county/court first.');
+  const txt = [
+    `County: ${currentCounty.name}`,
+    '',
+    'County Demographics Context:',
+    currentCounty.demographicsBlurb || 'TBD',
+    '',
+    'County Political Context (public election benchmark):',
+    currentCounty.politicalBlurb || 'TBD',
+    '',
+    `Last Reviewed (county): ${currentCounty.lastReviewed || 'TBD'}`
+  ].join('\n');
+  await navigator.clipboard.writeText(txt);
+  alert('County section copied.');
+}
+
+async function copyJudgeSection() {
+  if (!currentCourt) return alert('Select county/court first.');
+  const txt = [
+    `Court: ${currentCourt.name}`,
+    `Judge: ${val(currentCourt.judge)}`,
+    '',
+    'Judge Background Context:',
+    currentCourt.judgeProfileBlurb || 'TBD',
+    '',
+    'Judge Political Context (public-source only):',
+    currentCourt.judgePoliticalBlurb || 'TBD',
+    '',
+    `Judge Source: ${src(currentCourt.judge) || 'TBD'}`,
+    `Last Reviewed (court): ${currentCourt.lastReviewed || 'TBD'}`
+  ].join('\n');
+  await navigator.clipboard.writeText(txt);
+  alert('Judge section copied.');
 }
 
 async function loadModerationQueue() {
@@ -467,6 +539,9 @@ async function saveAdmin() {
 
   el('loginBtn').onclick = login;
   el('logoutBtn').onclick = logout;
+  el('openProCheckoutBtn').onclick = () => openCheckout('pro');
+  el('openPremiumCheckoutBtn').onclick = () => openCheckout('premium');
+  loadPlans();
   el('globalSearchInput').addEventListener('input', runGlobalSearch);
   el('toggleAdminBtn').onclick = () => el('adminPanel').classList.toggle('hidden');
   el('toggleModerationBtn').onclick = () => el('moderationPanel').classList.toggle('hidden');
@@ -481,6 +556,8 @@ async function saveAdmin() {
   el('loadNewsBtn').onclick = loadRealtimeNews;
   el('buildCarrierReportBtn').onclick = buildCarrierReportDraft;
   el('copyCarrierReportBtn').onclick = copyCarrierReportDraft;
+  el('copyCountySectionBtn').onclick = copyCountySection;
+  el('copyJudgeSectionBtn').onclick = copyJudgeSection;
   el('saveFeedbackBtn').onclick = saveFeedbackEntry;
   el('loadFeedbackBtn').onclick = renderFeedbackList;
   el('copyFeedbackBtn').onclick = copyFeedback;
