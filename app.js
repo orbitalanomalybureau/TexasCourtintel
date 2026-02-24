@@ -1,5 +1,7 @@
 const LS_NOTES = 'txCourtIntel.notes.v1';
 const LS_SETTINGS = 'txCourtIntel.settings.v1';
+const DISCLAIMER_TEXT = 'This is public information only. Not legal advice. Consult a licensed attorney for advice regarding your case.';
+const LS_AUTH = 'txCourtIntel.auth.v1';
 const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
   ? 'http://127.0.0.1:8010/api'
   : 'https://api.texascourtintel.com/api';
@@ -7,6 +9,7 @@ let data;
 let currentCounty = null;
 let currentCourt = null;
 let token = null;
+let currentUser = null;
 let newsRefreshTimer = null;
 let tickerRefreshTimer = null;
 const newsCache = new Map();
@@ -107,16 +110,27 @@ function freshnessLabel(dateStr) {
   return `reviewed ${days} days ago`;
 }
 
+function isVerifiedAttorney() {
+  return (currentUser?.verification_status || 'unverified') === 'verified';
+}
+
 function hasTier(required) {
   const order = { core: 1, pro: 2, premium: 3 };
   const current = getSettings().subscriptionTier || 'core';
-  return (order[current] || 1) >= (order[required] || 1);
+  const tierOk = (order[current] || 1) >= (order[required] || 1);
+  if (required === 'premium') {
+    return tierOk && isVerifiedAttorney();
+  }
+  return tierOk;
 }
 
 function getNotes() { return JSON.parse(localStorage.getItem(LS_NOTES) || '{}'); }
 function setNotes(x) { localStorage.setItem(LS_NOTES, JSON.stringify(x)); }
 function getSettings() { return JSON.parse(localStorage.getItem(LS_SETTINGS) || '{"newsProvider":"google_rss","newsWhitelistOnly":true,"subscriptionTier":"core","tickerEnabled":true,"tickerScope":"statewide","tickerPosition":"top","tickerSpeed":"normal"}'); }
 function setSettings(x) { localStorage.setItem(LS_SETTINGS, JSON.stringify(x)); }
+function getAuth() { return JSON.parse(localStorage.getItem(LS_AUTH) || 'null'); }
+function setAuth(x) { localStorage.setItem(LS_AUTH, JSON.stringify(x)); }
+function clearAuth() { localStorage.removeItem(LS_AUTH); }
 
 function rankAndFilterNews(items, query, whitelistOnly) {
   const trusted = ['reuters', 'apnews', 'texastribune', 'dallasnews', 'houstonchronicle', 'courts', 'uscourts', 'gov', 'law'];
@@ -157,6 +171,44 @@ async function loadData() {
 
 function setAuthStatus(msg) { el('authStatus').textContent = msg; }
 
+function renderVerificationStatus() {
+  const badge = el('verificationStatus');
+  if (!badge) return;
+  const status = currentUser?.verification_status || 'unverified';
+  badge.textContent = `Verification: ${status}`;
+
+  const premiumGate = el('premiumGateMsg');
+  if (premiumGate) {
+    premiumGate.textContent = isVerifiedAttorney()
+      ? 'Premium features unlocked (verification complete).'
+      : 'Premium features are visible only to verified attorneys.';
+  }
+
+  if (currentCourt && currentCounty) {
+    renderCourt(currentCounty.id, currentCourt);
+  }
+}
+
+async function submitVerification() {
+  if (!token) return alert('Please login first.');
+  const bar_number = (el('barNumber')?.value || '').trim();
+  const jurisdiction = (el('jurisdiction')?.value || '').trim();
+  if (!bar_number || !jurisdiction) return alert('Enter bar number and jurisdiction.');
+
+  try {
+    const out = await api('/auth/verification/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ bar_number, jurisdiction })
+    });
+    currentUser = { ...currentUser, ...out };
+    renderVerificationStatus();
+    alert('Verification submitted. Status set to pending.');
+  } catch (e) {
+    alert(`Verification submit failed: ${e.message}`);
+  }
+}
+
 async function loadPlans() {
   try {
     const out = await api('/billing/plans');
@@ -189,7 +241,17 @@ async function login() {
       body: JSON.stringify({ username, password })
     });
     token = out.access_token;
+    currentUser = {
+      username,
+      role: out.role,
+      verification_status: out.verification_status || 'unverified',
+      bar_number: out.bar_number || null,
+      jurisdiction: out.jurisdiction || null,
+      attestation_ts: out.attestation_ts || null
+    };
+    setAuth({ token, currentUser });
     setAuthStatus(`Logged in as ${username} (${out.role})`);
+    renderVerificationStatus();
   } catch (e) {
     setAuthStatus('Login failed');
     alert(`Login failed: ${e.message}`);
@@ -198,7 +260,10 @@ async function login() {
 
 function logout() {
   token = null;
+  currentUser = null;
+  clearAuth();
   setAuthStatus('Not logged in');
+  renderVerificationStatus();
 }
 
 function renderCounty(county) {
@@ -476,6 +541,8 @@ async function copyCourtSummary() {
 function buildCarrierReportDraft() {
   if (!currentCounty || !currentCourt) return alert('Select county/court first.');
   const report = [
+    DISCLAIMER_TEXT,
+    '',
     `County: ${currentCounty.name}`,
     `Court: ${currentCourt.name}`,
     `Judge: ${val(currentCourt.judge)}`,
@@ -511,6 +578,8 @@ async function copyCarrierReportDraft() {
 async function copyCountySection() {
   if (!currentCounty) return alert('Select county/court first.');
   const txt = [
+    DISCLAIMER_TEXT,
+    '',
     `County: ${currentCounty.name}`,
     '',
     'County Demographics Context:',
@@ -528,6 +597,8 @@ async function copyCountySection() {
 async function copyJudgeSection() {
   if (!currentCourt) return alert('Select county/court first.');
   const txt = [
+    DISCLAIMER_TEXT,
+    '',
     `Court: ${currentCourt.name}`,
     `Judge: ${val(currentCourt.judge)}`,
     '',
@@ -635,6 +706,17 @@ async function saveAdmin() {
 
   el('loginBtn').onclick = login;
   el('logoutBtn').onclick = logout;
+  el('submitVerificationBtn').onclick = submitVerification;
+
+  const persisted = getAuth();
+  if (persisted?.token) {
+    token = persisted.token;
+    currentUser = persisted.currentUser || null;
+    if (currentUser?.username && currentUser?.role) {
+      setAuthStatus(`Logged in as ${currentUser.username} (${currentUser.role})`);
+    }
+  }
+  renderVerificationStatus();
   el('openProCheckoutBtn').onclick = () => openCheckout('pro');
   el('openPremiumCheckoutBtn').onclick = () => openCheckout('premium');
   loadPlans();

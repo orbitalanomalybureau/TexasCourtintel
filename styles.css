@@ -30,6 +30,16 @@ select,input,textarea,button{
   background:linear-gradient(180deg,var(--bg2),#0b1c34);
   color:var(--ink)
 }
+select{
+  appearance:none;
+  -webkit-appearance:none;
+  background-color:#0b1c34;
+}
+select option, select optgroup{
+  background:#0b1c34;
+  color:var(--ink);
+}
+select:focus{outline:1px solid var(--gold);}
 button{
   cursor:pointer;
   font-weight:700;
