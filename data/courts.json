@@ -6,8 +6,8 @@
       "officialSite": "https://www.bexar.org/",
       "localRulesUrl": "https://www.bexar.org/2971/Courts",
       "holidayCalendarUrl": "https://www.bexar.org/",
-      "demographicsBlurb": "Large urban county centered on San Antonio with diverse population and mixed urban/suburban jury pools.",
-      "politicalBlurb": "Historically competitive-to-leaning Democratic in recent countywide results; verify latest election cycle data.",
+      "demographicsBlurb": "Large urban county centered on San Antonio; 2020 population ~2.01M with majority-Hispanic population (~59%). Education profile: bachelor's degree or higher is roughly around one-third of adults (ACS/Census profile range).",
+      "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~58% vs Republican ~40% (verify race-specific local contests each cycle).",
       "lastReviewed": "2026-02-23",
       "courts": [
         { "id": "1", "name": "37th District Court", "type": "Civil District Court", "judge": { "value": "TBD", "source": "https://www.bexar.org/" }, "judgeProfileBlurb": "Public profile pending official verification.", "judgePoliticalBlurb": "Use verifiable public records only.", "coordinator": { "value": "TBD", "source": "https://www.bexar.org/" }, "bailiff": { "value": "TBD", "source": "https://www.bexar.org/" }, "courtWebsite": "https://www.bexar.org/", "liveStreamUrl": "", "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.", "lastReviewed": "2026-02-24" },
@@ -35,8 +35,8 @@
       "officialSite": "https://www.traviscountytx.gov/",
       "localRulesUrl": "https://www.traviscountytx.gov/courts",
       "holidayCalendarUrl": "https://www.traviscountytx.gov/",
-      "demographicsBlurb": "Austin-centered county with highly educated urban population and significant tech-sector footprint.",
-      "politicalBlurb": "Generally Democratic-leaning in recent countywide elections; verify latest cycle for updates.",
+      "demographicsBlurb": "Austin-centered county with highly educated urban population and major tech-sector footprint; bachelor's degree-or-higher share is among the highest in Texas (roughly around half of adults).",
+      "politicalBlurb": "Election snapshot: strongly Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~72% vs Republican ~27% (verify race-specific local contests each cycle).",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
@@ -61,8 +61,8 @@
       "officialSite": "https://www.harriscountytx.gov/",
       "localRulesUrl": "https://www.justex.net/",
       "holidayCalendarUrl": "https://www.harriscountytx.gov/",
-      "demographicsBlurb": "Texas’s largest county with broad demographic diversity and major metropolitan civil docket volume.",
-      "politicalBlurb": "Mixed but recently trending Democratic in countywide contests; check latest election outcomes.",
+      "demographicsBlurb": "Texas’s largest county with very high diversity and large urban/suburban population; education profile is above state average with strong variation by precinct and municipality.",
+      "politicalBlurb": "Election snapshot: countywide results have leaned Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~56% vs Republican ~43% (verify race-specific local contests each cycle).",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
@@ -87,8 +87,8 @@
       "officialSite": "https://www.hidalgocounty.us/",
       "localRulesUrl": "https://www.hidalgocounty.us/155/District-Courts",
       "holidayCalendarUrl": "https://www.hidalgocounty.us/",
-      "demographicsBlurb": "Border county with large Hispanic population and high-volume civil/criminal court activity.",
-      "politicalBlurb": "Historically Democratic-leaning with evolving competitive dynamics in recent cycles.",
+      "demographicsBlurb": "Border county with large Hispanic majority population and significant bilingual court-access needs; education attainment has improved over time but remains below Texas metro-county averages.",
+      "politicalBlurb": "Election snapshot: historically Democratic-leaning but increasingly competitive in statewide cycles; benchmark presidential county result was roughly Democratic ~58% vs Republican ~41% (verify race-specific local contests each cycle).",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
@@ -113,8 +113,8 @@
       "officialSite": "https://www.dallascounty.org/",
       "localRulesUrl": "https://www.dallascounty.org/government/civil-district-courts/",
       "holidayCalendarUrl": "https://www.dallascounty.org/",
-      "demographicsBlurb": "Large metro county with substantial civil docket activity and diverse juror pools.",
-      "politicalBlurb": "Generally Democratic-leaning in countywide races in recent cycles; monitor updates.",
+      "demographicsBlurb": "Large metro county with diverse urban and suburban population composition; education attainment is relatively high with substantial graduate/professional concentration in core urban areas.",
+      "politicalBlurb": "Election snapshot: countywide results have leaned Democratic in recent cycles; benchmark presidential county result was roughly Democratic ~65% vs Republican ~34% (verify race-specific local contests each cycle).",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
