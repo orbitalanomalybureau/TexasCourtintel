@@ -12,72 +12,72 @@
       "courts": [
         {
           "id": "1",
-          "name": "37th District Court",
+          "name": "37th Civil District Court",
           "type": "Civil District Court",
           "judge": {
             "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "source": "https://www.bexar.org/1777/37th-Civil-District-Court"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "source": "https://www.bexar.org/1777/37th-Civil-District-Court"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "source": "https://www.bexar.org/1777/37th-Civil-District-Court"
           },
-          "courtWebsite": "https://www.bexar.org/",
+          "courtWebsite": "https://www.bexar.org/1777/37th-Civil-District-Court",
           "liveStreamUrl": "",
           "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
-          "lastReviewed": "2026-02-24"
+          "lastReviewed": "2026-02-25"
         },
         {
           "id": "2",
-          "name": "45th District Court",
+          "name": "45th Civil District Court",
           "type": "Civil District Court",
           "judge": {
             "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "source": "https://www.bexar.org/1778/45th-Civil-District-Court"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "source": "https://www.bexar.org/1778/45th-Civil-District-Court"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "source": "https://www.bexar.org/1778/45th-Civil-District-Court"
           },
-          "courtWebsite": "https://www.bexar.org/",
+          "courtWebsite": "https://www.bexar.org/1778/45th-Civil-District-Court",
           "liveStreamUrl": "",
           "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
-          "lastReviewed": "2026-02-24"
+          "lastReviewed": "2026-02-25"
         },
         {
           "id": "3",
-          "name": "57th District Court",
+          "name": "57th Civil District Court",
           "type": "Civil District Court",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "value": "Judge Antonia (Toni) Arteaga",
+            "source": "https://www.bexar.org/1779/57th-Civil-District-Court"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.bexar.org/"
+            "value": "Not listed on official page excerpt",
+            "source": "https://www.bexar.org/1779/57th-Civil-District-Court"
           },
           "bailiff": {
             "value": "TBD",
             "source": "https://www.bexar.org/"
           },
-          "courtWebsite": "https://www.bexar.org/",
+          "courtWebsite": "https://www.bexar.org/1779/57th-Civil-District-Court",
           "liveStreamUrl": "",
-          "publicInfo": "Bexar civil court roster expansion in progress; verify standing orders.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Bexar County Courthouse, 100 Dolorosa, 2nd Floor, San Antonio, TX 78205. Phone: 210-335-2531.",
+          "lastReviewed": "2026-02-25"
         },
         {
           "id": "4",
@@ -760,14 +760,83 @@
       "courts": [
         {
           "id": "2",
-          "name": "53rd District Court",
+          "name": "53rd Civil District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "Judge Maria Cant\u00fa Hexsel",
+            "source": "https://www.traviscountytx.gov/courts/civil/district/53"
+          },
+          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgePoliticalBlurb": "Use only verified public records.",
+          "coordinator": {
+            "value": "Tiffaney Gould (Judicial Executive Assistant)",
+            "source": "https://www.traviscountytx.gov/courts/civil/district/53"
+          },
+          "bailiff": {
+            "value": "Not listed on official court page",
+            "source": "https://www.traviscountytx.gov/courts/civil/district/53"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts/civil/district/53",
+          "liveStreamUrl": "",
+          "publicInfo": "1700 Guadalupe, 8th floor, Austin, TX 78701. Court Administration Office: (512) 854-2484. Submission email: 53.Submission@traviscountytx.gov. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "3",
+          "name": "County Court at Law No. 1",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "Judge Todd Wong",
+            "source": "https://www.traviscountytx.gov/courts/civil/county/cc1"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "Brandy Culton (Judicial Executive Assistant)",
+            "source": "https://www.traviscountytx.gov/courts/civil/county/cc1"
+          },
+          "bailiff": {
+            "value": "Not listed on official court page",
+            "source": "https://www.traviscountytx.gov/courts/civil/county/cc1"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts/civil/county/cc1",
+          "liveStreamUrl": "",
+          "publicInfo": "Civil and Family Courts Facility, 1700 Guadalupe St, Austin, TX 78701. Docket schedules posted on official page. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "4",
+          "name": "County Court at Law No. 2",
+          "type": "County Court at Law",
+          "judge": {
+            "value": "Judge Eric Shepperd",
+            "source": "https://www.traviscountytx.gov/courts/civil/county/cc2"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "Priscela Valladares (Judicial Executive Assistant)",
+            "source": "https://www.traviscountytx.gov/courts/civil/county/cc2"
+          },
+          "bailiff": {
+            "value": "Not listed on official court page",
+            "source": "https://www.traviscountytx.gov/courts/civil/county/cc2"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts/civil/county/cc2",
+          "liveStreamUrl": "",
+          "publicInfo": "County Court at Law 2, 1700 Guadalupe, 7th floor, Austin, TX 78701. Phone: (512) 854-9242. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "5",
+          "name": "98th District Court",
           "type": "Civil District Court",
           "judge": {
             "value": "TBD",
             "source": "https://www.traviscountytx.gov/courts"
           },
-          "judgeProfileBlurb": "Public profile pending verification.",
-          "judgePoliticalBlurb": "Use only verified public records.",
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
             "source": "https://www.traviscountytx.gov/courts"
@@ -778,54 +847,261 @@
           },
           "courtWebsite": "https://www.traviscountytx.gov/courts",
           "liveStreamUrl": "",
-          "publicInfo": "Populate from official county/court pages.",
-          "lastReviewed": "2026-02-23"
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
         },
         {
-          "id": "3",
-          "name": "County Court at Law No. 1",
-          "type": "County Court at Law",
+          "id": "6",
+          "name": "126th District Court",
+          "type": "Civil District Court",
           "judge": {
             "value": "TBD",
-            "source": "https://www.traviscountytx.gov/"
+            "source": "https://www.traviscountytx.gov/courts"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.traviscountytx.gov/"
+            "source": "https://www.traviscountytx.gov/courts"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.traviscountytx.gov/"
+            "source": "https://www.traviscountytx.gov/courts"
           },
-          "courtWebsite": "https://www.traviscountytx.gov/",
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
         },
         {
-          "id": "4",
-          "name": "County Court at Law No. 2",
-          "type": "County Court at Law",
+          "id": "7",
+          "name": "200th District Court",
+          "type": "Civil District Court",
           "judge": {
             "value": "TBD",
-            "source": "https://www.traviscountytx.gov/"
+            "source": "https://www.traviscountytx.gov/courts"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.traviscountytx.gov/"
+            "source": "https://www.traviscountytx.gov/courts"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.traviscountytx.gov/"
+            "source": "https://www.traviscountytx.gov/courts"
           },
-          "courtWebsite": "https://www.traviscountytx.gov/",
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "8",
+          "name": "201st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "9",
+          "name": "250th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "10",
+          "name": "261st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "11",
+          "name": "299th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "12",
+          "name": "345th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "13",
+          "name": "353rd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "14",
+          "name": "419th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "15",
+          "name": "427th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "16",
+          "name": "459th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.traviscountytx.gov/courts"
+          },
+          "courtWebsite": "https://www.traviscountytx.gov/courts",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
         }
       ]
     },
@@ -837,122 +1113,651 @@
       "holidayCalendarUrl": "https://www.harriscountytx.gov/",
       "demographicsBlurb": "Texas\u2019s largest county with highly diverse population, heavy civil docket volume, and broad socioeconomic spread across urban, suburban, and industrial zones. Education levels are above state averages overall with sharp precinct-level differences.",
       "politicalBlurb": "Election snapshot: countywide outcomes have leaned Democratic in recent cycles, with meaningful crossover dynamics in suburban areas; benchmark presidential split is roughly D 56% / R 43%.",
-      "lastReviewed": "2026-02-23",
+      "lastReviewed": "2026-02-26",
       "courts": [
         {
           "id": "3",
           "name": "55th District Court",
           "type": "Civil District Court",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.justex.net/"
+            "value": "Judge Latosha Lewis Payne",
+            "source": "https://www.fdams.justex.net/JustexAPI/api/Courts/?CourtClassID=1"
           },
-          "judgeProfileBlurb": "Public profile pending verification.",
+          "judgeProfileBlurb": "Official Harris/Justex court roster lists Judge Latosha Lewis Payne for the 55th District Court.",
           "judgePoliticalBlurb": "If included, derive only from verifiable public election disclosures.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.justex.net/"
+            "source": "https://www.fdams.justex.net/JustexAPI/api/Courts/?CourtClassID=1"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.justex.net/"
+            "source": "https://www.fdams.justex.net/JustexAPI/api/Courts/?CourtClassID=1"
           },
           "courtWebsite": "https://www.justex.net/",
           "liveStreamUrl": "",
-          "publicInfo": "Populate from official pages and local rules.",
-          "lastReviewed": "2026-02-23"
+          "publicInfo": "Official Justex API roster (`/JustexAPI/api/Courts/?CourtClassID=1`) resolves 55th District Court judge as Latosha Lewis Payne, floor 9, phone (832) 927-2650. Coordinator/bailiff fields remain pending because this endpoint does not expose staff contacts; keep staff verification queued for court-specific official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "4",
           "name": "County Civil Court at Law No. 1",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Judge Sonia Lopez",
+            "source": "http://www.ccl.hctx.net/civil/1/default.htm"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Melissa Hammond (Trial Coordinator)",
+            "source": "http://www.ccl.hctx.net/civil/1/staff.htm"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Deputy Willie Hughes",
+            "source": "http://www.ccl.hctx.net/civil/1/default.htm"
           },
-          "courtWebsite": "https://www.harriscountytx.gov/",
+          "courtWebsite": "http://www.ccl.hctx.net/civil/1/default.htm",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Official staff page lists clerks Jesse Salas and Donna Hernandez, Trial Coordinator Melissa Hammond (832-927-1711), and Bailiff Deputy Willie Hughes (832-927-1701). Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "5",
           "name": "County Civil Court at Law No. 2",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Judge Jim F. Kovach",
+            "source": "http://www.ccl.hctx.net/civil/2/default.htm"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Grace Cantada (Trial Coordinator)",
+            "source": "http://www.ccl.hctx.net/civil/2/staff.htm"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Anthony Hemmitt",
+            "source": "http://www.ccl.hctx.net/civil/2/default.htm"
           },
-          "courtWebsite": "https://www.harriscountytx.gov/",
+          "courtWebsite": "http://www.ccl.hctx.net/civil/2/default.htm",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Official staff page lists clerks Angeles Villafranca and Maria De La Rosa, Trial Coordinator Grace Cantada (832-927-1722), and Bailiff Anthony Hemmitt (832-927-1724). Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "6",
           "name": "County Civil Court at Law No. 3",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Judge LaShawn A. Williams",
+            "source": "http://www.ccl.hctx.net/civil/3/default.htm"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Vanessa Richardson (Trial Coordinator)",
+            "source": "http://www.ccl.hctx.net/civil/3/staff.htm"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "value": "Deputy Mark Linton",
+            "source": "http://www.ccl.hctx.net/civil/3/default.htm"
           },
-          "courtWebsite": "https://www.harriscountytx.gov/",
+          "courtWebsite": "http://www.ccl.hctx.net/civil/3/default.htm",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Official staff page lists clerks Orion Ford and Elizabeth Lopez, Trial Coordinator Vanessa Richardson (832-927-1732), and Bailiff Deputy Mark Linton (832-927-1734). Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "7",
           "name": "County Civil Court at Law No. 4",
           "type": "County Court at Law",
           "judge": {
+            "value": "Judge Manpreet Monica Singh",
+            "source": "http://www.ccl.hctx.net/civil/4/default.htm"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "Rick Wilson (Trial Coordinator)",
+            "source": "http://www.ccl.hctx.net/civil/4/staff.htm"
+          },
+          "bailiff": {
+            "value": "Valerie Jenkins",
+            "source": "http://www.ccl.hctx.net/civil/4/default.htm"
+          },
+          "courtWebsite": "http://www.ccl.hctx.net/civil/4/default.htm",
+          "liveStreamUrl": "",
+          "publicInfo": "Official staff page lists clerks Christina Casiano and Mariela Santibanez, Trial Coordinator Rick Wilson (832-927-1704), and Bailiff Valerie Jenkins (832-927-1744). Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "8",
+          "name": "11th District Court",
+          "type": "Civil District Court",
+          "judge": {
             "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "source": "https://www.justex.net/Courts/Civil"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "source": "https://www.justex.net/Courts/Civil"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.harriscountytx.gov/"
+            "source": "https://www.justex.net/Courts/Civil"
           },
-          "courtWebsite": "https://www.harriscountytx.gov/",
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "9",
+          "name": "61st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "10",
+          "name": "80th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "11",
+          "name": "113th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "12",
+          "name": "125th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "13",
+          "name": "127th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "14",
+          "name": "129th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "15",
+          "name": "133rd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "16",
+          "name": "151st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "17",
+          "name": "152nd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "18",
+          "name": "157th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "19",
+          "name": "164th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "20",
+          "name": "165th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "21",
+          "name": "189th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "22",
+          "name": "190th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "23",
+          "name": "215th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "24",
+          "name": "269th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "25",
+          "name": "270th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "26",
+          "name": "280th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "27",
+          "name": "281st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "28",
+          "name": "295th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "29",
+          "name": "333rd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "30",
+          "name": "334th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.justex.net/Courts/Civil"
+          },
+          "courtWebsite": "https://www.justex.net/Courts/Civil",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
         }
       ]
     },
@@ -960,7 +1765,7 @@
       "id": "hidalgo",
       "name": "Hidalgo",
       "officialSite": "https://www.hidalgocounty.us/",
-      "localRulesUrl": "https://www.hidalgocounty.us/155/District-Courts",
+      "localRulesUrl": "https://www.hidalgocounty.us/2552/District-Courts",
       "holidayCalendarUrl": "https://www.hidalgocounty.us/",
       "demographicsBlurb": "Border county with large Hispanic-majority population, high bilingual-service relevance, and significant cross-border economic influence. Education attainment is improving over time but still trails major Texas metro-county averages.",
       "politicalBlurb": "Election snapshot: historically Democratic-leaning but increasingly competitive in statewide cycles; benchmark presidential split is roughly D 58% / R 41%.",
@@ -971,23 +1776,23 @@
           "name": "92nd District Court",
           "type": "District Court",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.hidalgocounty.us/155/District-Courts"
+            "value": "Judge Luis M. Singleterry",
+            "source": "https://www.hidalgocounty.us/210/92nd-District-Court"
           },
           "judgeProfileBlurb": "Public profile pending verification.",
           "judgePoliticalBlurb": "Use attributable public records only; no speculative scoring.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.hidalgocounty.us/155/District-Courts"
+            "source": "https://www.hidalgocounty.us/2552/District-Courts"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.hidalgocounty.us/155/District-Courts"
+            "source": "https://www.hidalgocounty.us/2552/District-Courts"
           },
-          "courtWebsite": "https://www.hidalgocounty.us/155/District-Courts",
+          "courtWebsite": "https://www.hidalgocounty.us/210/92nd-District-Court",
           "liveStreamUrl": "",
-          "publicInfo": "Add publicly posted procedural details.",
-          "lastReviewed": "2026-02-23"
+          "publicInfo": "Hidalgo County Courthouse, 100 North Closner, Edinburg, TX 78539. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "5",
@@ -1009,8 +1814,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "6",
@@ -1032,8 +1837,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "7",
@@ -1055,8 +1860,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "8",
@@ -1078,8 +1883,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "9",
@@ -1101,8 +1906,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "10",
@@ -1124,8 +1929,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "11",
@@ -1147,8 +1952,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "12",
@@ -1170,8 +1975,8 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "13",
@@ -1193,8 +1998,261 @@
           },
           "courtWebsite": "https://www.hidalgocounty.us/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "14",
+          "name": "93rd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "15",
+          "name": "139th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "16",
+          "name": "206th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "17",
+          "name": "275th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "18",
+          "name": "332nd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "19",
+          "name": "370th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "20",
+          "name": "389th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "21",
+          "name": "398th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "22",
+          "name": "430th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "23",
+          "name": "449th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "24",
+          "name": "476th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.hidalgocounty.us/Directory.aspx?did=18"
+          },
+          "courtWebsite": "https://www.hidalgocounty.us/Directory.aspx?did=18",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
         }
       ]
     },
@@ -1202,149 +2260,425 @@
       "id": "dallas",
       "name": "Dallas",
       "officialSite": "https://www.dallascounty.org/",
-      "localRulesUrl": "https://www.dallascounty.org/government/civil-district-courts/",
+      "localRulesUrl": "https://www.dallascounty.org/government/courts/civil_district/",
       "holidayCalendarUrl": "https://www.dallascounty.org/",
       "demographicsBlurb": "Large metro county with high civil/commercial docket activity, substantial corporate-employer base, and diverse juror pools. Education attainment is relatively high overall, with concentration of graduate/professional populations in core submarkets.",
       "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles; benchmark presidential split is roughly D 65% / R 34%, with notable variation between urban core and outer precincts.",
-      "lastReviewed": "2026-02-23",
+      "lastReviewed": "2026-02-25",
       "courts": [
         {
           "id": "5",
           "name": "44th District Court",
           "type": "Civil District Court",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/government/civil-district-courts/"
+            "value": "Hon. Veretta Frazier (Presiding)",
+            "source": "https://www.dallascounty.org/government/courts/civil_district/44th/"
           },
           "judgeProfileBlurb": "Public profile pending verification.",
           "judgePoliticalBlurb": "Provide factual, sourced public-election context only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/government/civil-district-courts/"
+            "value": "Sheria West",
+            "source": "https://www.dallascounty.org/government/courts/civil_district/44th/"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/government/civil-district-courts/"
+            "value": "Name not listed (phone listed: 214-653-7427)",
+            "source": "https://www.dallascounty.org/government/courts/civil_district/44th/"
           },
-          "courtWebsite": "https://www.dallascounty.org/government/civil-district-courts/",
+          "courtWebsite": "https://www.dallascounty.org/government/courts/civil_district/44th/",
           "liveStreamUrl": "",
-          "publicInfo": "Add standing orders/hearing preferences from official sources.",
-          "lastReviewed": "2026-02-23"
+          "publicInfo": "George L. Allen Sr. Courts Bldg, 600 Commerce St, 5th Floor New Tower, Dallas TX 75202. Coordinator phone: 214-653-6996. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "6",
           "name": "County Court at Law No. 1",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Hon. D'Metria Benson (Presiding)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law1/"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Seth Little",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law1/"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Not listed on official page",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law1/"
           },
-          "courtWebsite": "https://www.dallascounty.org/",
+          "courtWebsite": "https://www.dallascounty.org/government/courts/county_court_at_law/law1/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "George L. Allen Sr. Courts Bldg, 600 Commerce St, 5th Floor New Tower, Dallas TX 75202. Court clerks: 214-653-7556. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "7",
           "name": "County Court at Law No. 2",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Hon. Melissa Bellan (Presiding)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law2/"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Montessa Bussey",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law2/"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Not listed on official page",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law2/"
           },
-          "courtWebsite": "https://www.dallascounty.org/",
+          "courtWebsite": "https://www.dallascounty.org/government/courts/county_court_at_law/law2/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "George L. Allen Sr. Courts Bldg, 600 Commerce St, 5th Floor New Tower, Dallas TX 75202. Coordinator phone: 214-653-7365. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "8",
           "name": "County Court at Law No. 3",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Hon. Sally Montgomery (Presiding)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law3/"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Leslie Richardson",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law3/"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Not listed on official page",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law3/"
           },
-          "courtWebsite": "https://www.dallascounty.org/",
+          "courtWebsite": "https://www.dallascounty.org/government/courts/county_court_at_law/law3/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "George L. Allen Sr. Courts Bldg, 600 Commerce St, 5th Floor New Tower, Dallas TX 75202. Court clerk line: 214-653-7595. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "9",
           "name": "County Court at Law No. 4",
           "type": "County Court at Law",
           "judge": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Hon. Dianne K. Jones (Presiding)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law4/"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Cathy Moran",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law4/"
           },
           "bailiff": {
-            "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "value": "Court Security: Rickey Wilson (page does not label as Bailiff)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law4/"
           },
-          "courtWebsite": "https://www.dallascounty.org/",
+          "courtWebsite": "https://www.dallascounty.org/government/courts/county_court_at_law/law4/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "George L. Allen Sr. Courts Bldg, 600 Commerce St, 5th Floor New Tower, Dallas TX 75202. Coordinator phone: 214-653-7345. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
         },
         {
           "id": "10",
           "name": "County Court at Law No. 5",
           "type": "County Court at Law",
           "judge": {
+            "value": "Hon. Nicole Taylor (Presiding)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law5/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "Raychel Smith",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law5/"
+          },
+          "bailiff": {
+            "value": "Court Security: David Smiles (page does not label as Bailiff)",
+            "source": "https://www.dallascounty.org/government/courts/county_court_at_law/law5/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/county_court_at_law/law5/",
+          "liveStreamUrl": "",
+          "publicInfo": "George L. Allen Sr. Courts Bldg, 600 Commerce St, 5th Floor Old Tower, Dallas TX 75202. Court clerks: 214-653-6441. Dropbox/eFiling note: verify current county clerk or district clerk filing instructions.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "11",
+          "name": "14th District Court",
+          "type": "Civil District Court",
+          "judge": {
             "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "source": "https://www.dallascounty.org/government/courts/"
           },
           "judgeProfileBlurb": "Public profile pending official verification.",
           "judgePoliticalBlurb": "Use verifiable public records only.",
           "coordinator": {
             "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "source": "https://www.dallascounty.org/government/courts/"
           },
           "bailiff": {
             "value": "TBD",
-            "source": "https://www.dallascounty.org/"
+            "source": "https://www.dallascounty.org/government/courts/"
           },
-          "courtWebsite": "https://www.dallascounty.org/",
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
           "liveStreamUrl": "",
-          "publicInfo": "County court roster added for county-by-county expansion; verify docket scope and standing orders from official pages.",
-          "lastReviewed": "2026-02-24"
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "12",
+          "name": "68th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "13",
+          "name": "95th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "14",
+          "name": "101st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "15",
+          "name": "116th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "16",
+          "name": "134th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "17",
+          "name": "160th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "18",
+          "name": "162nd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "19",
+          "name": "191st District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "20",
+          "name": "192nd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "21",
+          "name": "193rd District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
+        },
+        {
+          "id": "22",
+          "name": "298th District Court",
+          "type": "Civil District Court",
+          "judge": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "judgeProfileBlurb": "Public profile pending official verification.",
+          "judgePoliticalBlurb": "Use verifiable public records only.",
+          "coordinator": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "bailiff": {
+            "value": "TBD",
+            "source": "https://www.dallascounty.org/government/courts/"
+          },
+          "courtWebsite": "https://www.dallascounty.org/government/courts/",
+          "liveStreamUrl": "",
+          "publicInfo": "Court profile seeded for demo completeness. Filing/dropbox workflow: verify with District Clerk / County Clerk before live use.",
+          "lastReviewed": "2026-02-27"
         }
       ]
     }
