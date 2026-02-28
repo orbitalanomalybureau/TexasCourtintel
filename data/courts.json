@@ -4,10 +4,10 @@
       "id": "bexar",
       "name": "Bexar",
       "officialSite": "https://www.bexar.org/",
-      "localRulesUrl": "https://www.bexar.org/Search?searchPhrase=local%20rules%20courts",
+      "localRulesUrl": "https://www.bexar.org/1703/Civil-District-Courts",
       "holidayCalendarUrl": "https://www.bexar.org/Calendar.aspx",
-      "demographicsBlurb": "Large urban county centered on San Antonio; majority-Hispanic population, major military/healthcare employment base, and mixed urban-suburban jury pools. Education profile includes strong higher-ed pipeline with notable variation by ZIP and income corridor.",
-      "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles, but margins vary significantly by precinct and judicial ballot type; benchmark presidential split is roughly D 58% / R 40%.",
+      "demographicsBlurb": "Bexar County (pop. ~2.09M) is majority Hispanic (59.8%) with substantial bilingual households (37.7% speak a language other than English at home). Median age is 35.0; bachelor's+ attainment is 32.8%; median household income is about $69.8k with 14.7% below poverty, supporting large, mixed urban/suburban jury pools and damages narratives that can vary materially by venue within the county.",
+      "politicalBlurb": "Countywide elections have leaned Democratic in recent cycles (driven by San Antonio urban core), while outer suburban precincts remain more competitive and can tighten judicial/down-ballot margins. For trial strategy, assume partisan heterogeneity by precinct and ballot position rather than a uniform countywide profile.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
@@ -752,10 +752,10 @@
       "id": "travis",
       "name": "Travis",
       "officialSite": "https://www.traviscountytx.gov/",
-      "localRulesUrl": "https://www.traviscountytx.gov/courts",
-      "holidayCalendarUrl": "https://www.traviscountytx.gov/",
-      "demographicsBlurb": "Austin-centered county with strong tech/public-sector economy, younger median age profile, and one of Texas\u2019s highest educational attainment rates. Jury pools can vary sharply between urban core and outlying precincts.",
-      "politicalBlurb": "Election snapshot: strongly Democratic in recent cycles; benchmark presidential split is roughly D 72% / R 27%, while select local judicial races can produce narrower deltas.",
+      "localRulesUrl": "https://www.traviscountytx.gov/images/courts/Docs/Amended_local_rules_of_civil_procedure_and_rules_of_decorum_20221015.pdf",
+      "holidayCalendarUrl": "https://www.traviscountytx.gov/human-resources/approved-holiday-schedule",
+      "demographicsBlurb": "Travis County (pop. ~1.33M) has a high-education, high-income profile (58.7% bachelor's+; median household income about $97.5k) with lower poverty (10.2%) and median age 36.1. Hispanic residents are 32.4%, and 30.4% of households speak a language other than English at home. Austin's tech/government economy and education concentration can shape jury expectations around documentation, expert testimony, and institutional conduct.",
+      "politicalBlurb": "Travis is one of Texas' strongest Democratic counties in countywide federal elections; however, neighborhood-level ideology and class differences (urban core vs. growth corridors) still matter in voir dire and damages framing. Judicial and local-issue contests may show narrower spreads than headline partisan results.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
@@ -763,7 +763,7 @@
           "name": "53rd Civil District Court",
           "type": "Civil District Court",
           "judge": {
-            "value": "Judge Maria Cant\u00fa Hexsel",
+            "value": "Judge Maria Cantú Hexsel",
             "source": "https://www.traviscountytx.gov/courts/civil/district/53"
           },
           "judgeProfileBlurb": "Public profile pending verification.",
@@ -1109,10 +1109,10 @@
       "id": "harris",
       "name": "Harris",
       "officialSite": "https://www.harriscountytx.gov/",
-      "localRulesUrl": "https://www.justex.net/",
-      "holidayCalendarUrl": "https://www.harriscountytx.gov/",
-      "demographicsBlurb": "Texas\u2019s largest county with highly diverse population, heavy civil docket volume, and broad socioeconomic spread across urban, suburban, and industrial zones. Education levels are above state averages overall with sharp precinct-level differences.",
-      "politicalBlurb": "Election snapshot: countywide outcomes have leaned Democratic in recent cycles, with meaningful crossover dynamics in suburban areas; benchmark presidential split is roughly D 56% / R 43%.",
+      "localRulesUrl": "https://www.justex.net/Courts/Civil/CivilCourts.aspx",
+      "holidayCalendarUrl": "https://www.harriscountytx.gov/Residents/Information/Harris-County-Holidays",
+      "demographicsBlurb": "Harris County (pop. ~4.84M) is the state's largest jury pool and highly diverse (44.1% Hispanic; 45.3% language other than English at home). Median age is 34.8; bachelor's+ attainment is 34.2%; median household income is about $72.3k with 16.0% below poverty. The county's scale and socioeconomic dispersion can produce substantial variation in juror attitudes between urban core, industrial corridors, and outer suburbs.",
+      "politicalBlurb": "Recent countywide outcomes generally favor Democrats, but Harris remains a true battleground at the precinct level: suburban and exurban sectors can swing, and some judicial races are materially closer than top-of-ticket results. Expect meaningful intra-county political variance in panel composition.",
       "lastReviewed": "2026-02-26",
       "courts": [
         {
@@ -1766,9 +1766,9 @@
       "name": "Hidalgo",
       "officialSite": "https://www.hidalgocounty.us/",
       "localRulesUrl": "https://www.hidalgocounty.us/2552/District-Courts",
-      "holidayCalendarUrl": "https://www.hidalgocounty.us/",
-      "demographicsBlurb": "Border county with large Hispanic-majority population, high bilingual-service relevance, and significant cross-border economic influence. Education attainment is improving over time but still trails major Texas metro-county averages.",
-      "politicalBlurb": "Election snapshot: historically Democratic-leaning but increasingly competitive in statewide cycles; benchmark presidential split is roughly D 58% / R 41%.",
+      "holidayCalendarUrl": "https://www.hidalgocounty.us/DocumentCenter/View/71731/2026-Holidays",
+      "demographicsBlurb": "Hidalgo County (pop. ~898k) is heavily Hispanic (91.9%) with very high bilingual relevance (78.4% language other than English at home) and a younger profile (median age 30.9). Bachelor's+ attainment is 20.7%; median household income is about $53.7k; poverty is 27.2%. These indicators are litigation-relevant for communication style, economic-loss framing, and practical access-to-care/workforce evidence.",
+      "politicalBlurb": "Hidalgo has historically leaned Democratic, but recent cycles show notable rightward movement in parts of the Rio Grande Valley. Practically, counsel should not treat the county as a static partisan environment; precinct-level shifts and turnout volatility can materially affect jury composition and narrative resonance.",
       "lastReviewed": "2026-02-23",
       "courts": [
         {
@@ -2260,10 +2260,10 @@
       "id": "dallas",
       "name": "Dallas",
       "officialSite": "https://www.dallascounty.org/",
-      "localRulesUrl": "https://www.dallascounty.org/government/courts/civil_district/",
-      "holidayCalendarUrl": "https://www.dallascounty.org/",
-      "demographicsBlurb": "Large metro county with high civil/commercial docket activity, substantial corporate-employer base, and diverse juror pools. Education attainment is relatively high overall, with concentration of graduate/professional populations in core submarkets.",
-      "politicalBlurb": "Election snapshot: countywide voting has leaned Democratic in recent cycles; benchmark presidential split is roughly D 65% / R 34%, with notable variation between urban core and outer precincts.",
+      "localRulesUrl": "https://www.dallascounty.org/Assets/uploads/docs/district-clerk/Local-Rules-for-Civil-District-Courts-With-Appendixes-Included.pdf",
+      "holidayCalendarUrl": "https://www.dallascounty.org/about-us/holidays/",
+      "demographicsBlurb": "Dallas County (pop. ~2.61M) combines dense urban venues with fast-changing suburbs; 41.4% of residents are Hispanic and 43.2% speak a language other than English at home. Median age is 34.3; bachelor's+ attainment is 36.5%; median household income is about $74.4k with 13.7% below poverty. Commercial-employer concentration and demographic dispersion can influence both liability framing and damages expectations by courtroom and panel source area.",
+      "politicalBlurb": "Countywide voting trends Democratic, but the county is not monolithic: urban Dallas precincts differ from northern/eastern suburban precincts, and judicial contests can run meaningfully tighter than presidential baselines. Venue-specific jury strategy should account for precinct-level polarization and turnout differences.",
       "lastReviewed": "2026-02-25",
       "courts": [
         {
