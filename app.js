@@ -1,7 +1,15 @@
 const LS_NOTES = 'txCourtIntel.notes.v1';
 const LS_SETTINGS = 'txCourtIntel.settings.v1';
-const DISCLAIMER_TEXT = 'This is public information only. Not legal advice. Consult a licensed attorney for advice regarding your case.';
+const DISCLAIMER_TEXT = 'Informational public-source summary only. Not legal advice, not a substitute for official court records, and no attorney-client relationship is created.';
+const CARRIER_REPORT_COMPLIANCE_NOTE = 'Compliance Note: Official sources are primary. Supplemental context (e.g., LinkedIn) is premium-only and never used as sole basis for factual field updates.';
 const LS_AUTH = 'txCourtIntel.auth.v1';
+
+// Temporary pre-launch site shield (frontend gate).
+const SITE_LOCK_ENABLED = true;
+const SITE_LOCK_USER = 'scott';
+const SITE_LOCK_PASS = 'TCI-Private-0227!';
+const LS_SITE_UNLOCKED = 'txCourtIntel.siteUnlocked.v1';
+
 const API_BASE = (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')
   ? 'http://127.0.0.1:8010/api'
   : 'https://api.texascourtintel.com/api';
@@ -10,6 +18,7 @@ let currentCounty = null;
 let currentCourt = null;
 let token = null;
 let currentUser = null;
+let entitlementState = { subscription_tier: 'core', verification_status: 'unverified' };
 let newsRefreshTimer = null;
 let tickerRefreshTimer = null;
 const newsCache = new Map();
@@ -110,13 +119,32 @@ function freshnessLabel(dateStr) {
   return `reviewed ${days} days ago`;
 }
 
+function countySourceConfidence(county) {
+  if (!county) return { label: 'Unknown', detail: 'Missing county profile.' };
+  let score = 0;
+  if (county.officialSite) score += 2;
+  if (county.localRulesUrl) score += 2;
+  if (county.holidayCalendarUrl) score += 1;
+
+  const d = county.lastReviewed ? new Date(`${county.lastReviewed}T00:00:00`) : null;
+  if (d && !isNaN(d.getTime())) {
+    const days = Math.floor((Date.now() - d.getTime()) / (1000 * 60 * 60 * 24));
+    if (days <= 90) score += 2;
+    else if (days <= 365) score += 1;
+  }
+
+  if (score >= 6) return { label: 'High', detail: 'Multiple official links and recent review.' };
+  if (score >= 3) return { label: 'Moderate', detail: 'Partial official sourcing and/or older review date.' };
+  return { label: 'Low', detail: 'Limited official links or stale review date.' };
+}
+
 function isVerifiedAttorney() {
-  return (currentUser?.verification_status || 'unverified') === 'verified';
+  return (entitlementState.verification_status || 'unverified') === 'verified';
 }
 
 function hasTier(required) {
   const order = { core: 1, pro: 2, premium: 3 };
-  const current = getSettings().subscriptionTier || 'core';
+  const current = entitlementState.subscription_tier || 'core';
   const tierOk = (order[current] || 1) >= (order[required] || 1);
   if (required === 'premium') {
     return tierOk && isVerifiedAttorney();
@@ -131,6 +159,50 @@ function setSettings(x) { localStorage.setItem(LS_SETTINGS, JSON.stringify(x)); 
 function getAuth() { return JSON.parse(localStorage.getItem(LS_AUTH) || 'null'); }
 function setAuth(x) { localStorage.setItem(LS_AUTH, JSON.stringify(x)); }
 function clearAuth() { localStorage.removeItem(LS_AUTH); }
+
+function getSiteUnlocked() {
+  return localStorage.getItem(LS_SITE_UNLOCKED) === '1';
+}
+
+function setSiteUnlocked(v) {
+  if (v) localStorage.setItem(LS_SITE_UNLOCKED, '1');
+  else localStorage.removeItem(LS_SITE_UNLOCKED);
+}
+
+function setViewerLock(locked) {
+  const authPanel = el('authPanel');
+  const topButtons = ['toggleAdminBtn', 'toggleModerationBtn', 'toggleSettingsBtn'];
+  const gatedPanels = [
+    'plansPanel', 'countyCard', 'courtCard', 'adminPanel', 'notesPanel', 'feedbackPanel',
+    'moderationPanel', 'settingsPanel', 'newsPanel', 'carrierReportPanel'
+  ];
+
+  topButtons.forEach(id => {
+    const node = el(id);
+    if (!node) return;
+    node.disabled = !!locked;
+    node.style.opacity = locked ? '0.5' : '1';
+  });
+
+  const filters = document.querySelector('.filters');
+  if (filters) filters.classList.toggle('hidden', !!locked);
+
+  gatedPanels.forEach(id => {
+    const node = el(id);
+    if (node) node.classList.toggle('hidden', !!locked);
+  });
+
+  const wrap = el('legalTickerWrap');
+  if (wrap) wrap.style.display = locked ? 'none' : '';
+
+  if (authPanel) {
+    authPanel.classList.remove('hidden');
+    const h3 = authPanel.querySelector('h3');
+    if (h3) h3.textContent = locked ? 'Private Access' : 'Admin Login';
+  }
+
+  setAuthStatus(locked ? 'Site locked. Enter access credentials.' : (token ? `Logged in as ${currentUser?.username || 'user'}` : 'Access granted. Admin login optional.'));
+}
 
 function rankAndFilterNews(items, query, whitelistOnly) {
   const trusted = ['reuters', 'apnews', 'texastribune', 'dallasnews', 'houstonchronicle', 'courts', 'uscourts', 'gov', 'law'];
@@ -166,10 +238,72 @@ async function api(path, opts = {}) {
 
 async function loadData() {
   const res = await fetch('./data/courts.json');
-  return res.json();
+  const local = await res.json();
+  return hydrateDataFromApi(local);
+}
+
+function normalizeCourtValue(value, fallbackValue = 'TBD') {
+  const raw = (value || '').toString().trim();
+  if (!raw || /^tbd$/i.test(raw) || /^unknown$/i.test(raw) || /^not listed/i.test(raw)) return fallbackValue;
+  return raw;
+}
+
+async function hydrateDataFromApi(localData) {
+  try {
+    const rows = await api('/courts');
+    const byKey = new Map((rows || []).map(r => [`${(r.county || '').toLowerCase()}::${(r.court_name || '').toLowerCase()}`, r]));
+
+    for (const county of (localData?.counties || [])) {
+      for (const court of (county.courts || [])) {
+        const key = `${(county.name || '').toLowerCase()}::${(court.name || '').toLowerCase()}`;
+        const apiCourt = byKey.get(key);
+        if (!apiCourt) continue;
+
+        court.judge = {
+          value: normalizeCourtValue(apiCourt.judge, val(court.judge) || 'TBD'),
+          source: apiCourt.judge_source || src(court.judge) || ''
+        };
+        court.judgeProfileBlurb = apiCourt.judge_profile_blurb || '';
+        court.judgePoliticalBlurb = apiCourt.judge_political_blurb || '';
+        court.coordinator = {
+          value: normalizeCourtValue(apiCourt.coordinator, val(court.coordinator) || 'TBD'),
+          source: apiCourt.coordinator_source || src(court.coordinator) || ''
+        };
+        court.bailiff = {
+          value: normalizeCourtValue(apiCourt.bailiff, val(court.bailiff) || 'TBD'),
+          source: apiCourt.bailiff_source || src(court.bailiff) || ''
+        };
+        court.publicInfo = apiCourt.public_info || '';
+        court.lastReviewed = apiCourt.last_verified || court.lastReviewed || '';
+      }
+    }
+  } catch {
+    // Keep local static data as a safe fallback if backend is unavailable.
+  }
+  return localData;
 }
 
 function setAuthStatus(msg) { el('authStatus').textContent = msg; }
+
+async function refreshEntitlements() {
+  if (!token) {
+    entitlementState = { subscription_tier: 'core', verification_status: 'unverified' };
+    return;
+  }
+  try {
+    const out = await api('/billing/entitlements');
+    entitlementState = {
+      subscription_tier: out.subscription_tier || 'core',
+      verification_status: out.verification_status || 'unverified'
+    };
+    if (currentUser) {
+      currentUser.verification_status = entitlementState.verification_status;
+      currentUser.subscription_tier = entitlementState.subscription_tier;
+    }
+  } catch {
+    entitlementState = { subscription_tier: 'core', verification_status: 'unverified' };
+  }
+}
 
 function renderVerificationStatus() {
   const badge = el('verificationStatus');
@@ -202,6 +336,7 @@ async function submitVerification() {
       body: JSON.stringify({ bar_number, jurisdiction })
     });
     currentUser = { ...currentUser, ...out };
+    await refreshEntitlements();
     renderVerificationStatus();
     alert('Verification submitted. Status set to pending.');
   } catch (e) {
@@ -234,6 +369,20 @@ async function login() {
   const username = el('loginUser').value.trim();
   const password = el('loginPass').value;
   if (!username || !password) return alert('Enter username and password.');
+
+  // First gate: private pre-launch site access.
+  if (SITE_LOCK_ENABLED && !getSiteUnlocked()) {
+    if (username === SITE_LOCK_USER && password === SITE_LOCK_PASS) {
+      setSiteUnlocked(true);
+      setViewerLock(false);
+      el('loginPass').value = '';
+      return;
+    }
+    setAuthStatus('Site access denied');
+    return alert('Invalid site access credentials.');
+  }
+
+  // Second gate: backend admin auth (optional for read-only browsing).
   try {
     const out = await api('/auth/login', {
       method: 'POST',
@@ -245,23 +394,28 @@ async function login() {
       username,
       role: out.role,
       verification_status: out.verification_status || 'unverified',
+      subscription_tier: out.subscription_tier || 'core',
       bar_number: out.bar_number || null,
       jurisdiction: out.jurisdiction || null,
       attestation_ts: out.attestation_ts || null
     };
+    await refreshEntitlements();
     setAuth({ token, currentUser });
     setAuthStatus(`Logged in as ${username} (${out.role})`);
     renderVerificationStatus();
   } catch (e) {
-    setAuthStatus('Login failed');
-    alert(`Login failed: ${e.message}`);
+    setAuthStatus('Admin login failed (site access may still be granted)');
+    alert(`Admin login failed: ${e.message}`);
   }
 }
 
 function logout() {
   token = null;
   currentUser = null;
+  entitlementState = { subscription_tier: 'core', verification_status: 'unverified' };
   clearAuth();
+  setSiteUnlocked(false);
+  setViewerLock(SITE_LOCK_ENABLED);
   setAuthStatus('Not logged in');
   renderVerificationStatus();
 }
@@ -270,6 +424,7 @@ function renderCounty(county) {
   const card = el('countyCard');
   currentCounty = county;
   if (!county) return card.classList.add('hidden');
+  const confidence = countySourceConfidence(county);
   card.innerHTML = `<h3>${county.name} County <span class='badge'>County Profile</span></h3>
     <div class='linkrow'>
       ${county.localRulesUrl ? `<a target='_blank' href='${county.localRulesUrl}'>Local Rules</a>` : '<span class="small">Local rules link not set</span>'}
@@ -278,7 +433,9 @@ function renderCounty(county) {
     </div>
     <p><strong>Demographics:</strong> ${county.demographicsBlurb || 'TBD'}</p>
     <p><strong>Political context:</strong> ${county.politicalBlurb || 'TBD'}</p>
-    <p class='small'>Last reviewed: ${county.lastReviewed || 'TBD'} • ${freshnessLabel(county.lastReviewed || '')}</p>`;
+    <p class='small'><strong>Source confidence:</strong> ${confidence.label} — ${confidence.detail}</p>
+    <p class='small'>Last reviewed: ${county.lastReviewed || 'TBD'} • ${freshnessLabel(county.lastReviewed || '')}</p>
+    <p class='small'>${DISCLAIMER_TEXT}</p>`;
   card.classList.remove('hidden');
 }
 
@@ -334,7 +491,9 @@ function renderCourt(countyId, court) {
     <p><strong>Coordinator:</strong> ${val(court.coordinator)}</p>
     <p><strong>Bailiff:</strong> ${val(court.bailiff)}</p>
     <p><strong>Public notes:</strong> ${court.publicInfo || 'TBD'}</p>
-    <p class='small'>Last reviewed: ${court.lastReviewed || 'TBD'} • ${freshnessLabel(court.lastReviewed || '')}</p>`;
+    <p class='small'>Last reviewed: ${court.lastReviewed || 'TBD'} • ${freshnessLabel(court.lastReviewed || '')}</p>
+    <p class='small'>${DISCLAIMER_TEXT}</p>
+    <p class='small'>Verify operational details on official county/court websites before relying on them.</p>`;
   card.classList.remove('hidden');
   notesPanel.classList.remove('hidden');
   feedbackPanel.classList.remove('hidden');
@@ -541,9 +700,23 @@ function saveSettingsFromUi() {
 
 async function copyCourtSummary() {
   if (!currentCounty || !currentCourt) return alert('Select a county and court first.');
-  const txt = `County: ${currentCounty.name}\nCourt: ${currentCourt.name}\nJudge: ${val(currentCourt.judge)}\nCoordinator: ${val(currentCourt.coordinator)}\nBailiff: ${val(currentCourt.bailiff)}\nCourt Website: ${currentCourt.courtWebsite || ''}\nLive Stream: ${currentCourt.liveStreamUrl || ''}\nJudge News: ${judgeNewsLink(val(currentCourt.judge), currentCounty.name)}`;
+  const txt = `${DISCLAIMER_TEXT}\n\nCounty: ${currentCounty.name}\nCourt: ${currentCourt.name}\nJudge: ${val(currentCourt.judge)}\nCoordinator: ${val(currentCourt.coordinator)}\nBailiff: ${val(currentCourt.bailiff)}\nCourt Website: ${currentCourt.courtWebsite || ''}\nLive Stream: ${currentCourt.liveStreamUrl || ''}\nJudge News: ${judgeNewsLink(val(currentCourt.judge), currentCounty.name)}\n\nVerify operational details with official county/court sources.`;
   await navigator.clipboard.writeText(txt);
   alert('Copied court summary to clipboard.');
+}
+
+function enforceCarrierReportIntegrity(text) {
+  const body = (text || '').replace(/\r\n/g, '\n').trim();
+  if (!body) return '';
+
+  let normalized = body
+    .replaceAll(DISCLAIMER_TEXT, '')
+    .replaceAll(CARRIER_REPORT_COMPLIANCE_NOTE, '')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+
+  normalized = `${DISCLAIMER_TEXT}\n\n${normalized}\n\n${CARRIER_REPORT_COMPLIANCE_NOTE}`;
+  return normalized.replace(/\n{3,}/g, '\n\n').trim();
 }
 
 function buildCarrierReportDraft() {
@@ -569,16 +742,19 @@ function buildCarrierReportDraft() {
     '',
     `Court Website: ${currentCourt.courtWebsite || ''}`,
     `Judge Source: ${src(currentCourt.judge) || 'TBD'}`,
+    `Coordinator Source: ${src(currentCourt.coordinator) || 'TBD'}`,
+    `Bailiff Source: ${src(currentCourt.bailiff) || 'TBD'}`,
     `Last Reviewed: ${currentCourt.lastReviewed || currentCounty.lastReviewed || 'TBD'}`,
     '',
-    'Compliance Note: Official sources are primary. Supplemental context (e.g., LinkedIn) is premium-only and never used as sole basis for factual field updates.'
+    CARRIER_REPORT_COMPLIANCE_NOTE
   ].join('\n');
-  el('carrierReportBody').value = report;
+  el('carrierReportBody').value = enforceCarrierReportIntegrity(report);
 }
 
 async function copyCarrierReportDraft() {
-  const txt = (el('carrierReportBody').value || '').trim();
+  const txt = enforceCarrierReportIntegrity(el('carrierReportBody').value || '');
   if (!txt) return alert('Build report draft first.');
+  el('carrierReportBody').value = txt;
   await navigator.clipboard.writeText(txt);
   alert('Carrier report draft copied.');
 }
@@ -712,6 +888,9 @@ async function saveAdmin() {
   data = await loadData();
   data.counties.forEach(c => { const o=document.createElement('option'); o.value=c.id; o.textContent=c.name; el('countySelect').appendChild(o); });
 
+  const unlocked = !SITE_LOCK_ENABLED || getSiteUnlocked();
+  setViewerLock(!unlocked);
+
   el('loginBtn').onclick = login;
   el('logoutBtn').onclick = logout;
   el('submitVerificationBtn').onclick = submitVerification;
@@ -722,7 +901,10 @@ async function saveAdmin() {
     currentUser = persisted.currentUser || null;
     if (currentUser?.username && currentUser?.role) {
       setAuthStatus(`Logged in as ${currentUser.username} (${currentUser.role})`);
+      setSiteUnlocked(true);
+      setViewerLock(false);
     }
+    await refreshEntitlements();
   }
   renderVerificationStatus();
   el('openProCheckoutBtn').onclick = () => openCheckout('pro');
